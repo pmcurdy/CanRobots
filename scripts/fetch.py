@@ -77,9 +77,17 @@ CHANGES_HEADER = [
     "prev_bytes", "new_bytes", "snapshot_path",
 ]
 RUNS_HEADER = [
-    "run_at_utc", "orgs_checked", "fetch_errors", "changes_detected",
-    "runner_origin",
+    "run_at_utc", "orgs_checked", "ok_captures", "changes_detected",
+    "fetch_errors", "blocked", "non_robots_responses", "runner_origin",
 ]
+
+# A response body that contains any of these markers is an HTML page (a
+# bot-challenge page, an error page, or a JS single-page-app shell) rather than
+# a real robots.txt. Matched case-insensitively against the start of the body.
+HTML_MARKERS = ("<!doctype", "<html", "enable javascript")
+# A genuine robots.txt contains at least one of these directives. A body with
+# none of them is not a usable robots.txt even if it isn't obviously HTML.
+ROBOTS_DIRECTIVES = ("user-agent:", "disallow:", "allow:", "sitemap:")
 
 
 # --- Helpers -----------------------------------------------------------------
@@ -161,6 +169,46 @@ def append_csv(path: Path, header: list[str], row: dict, dry_run: bool) -> None:
 
 # --- Fetch -------------------------------------------------------------------
 
+def classify_response(result: dict) -> tuple[str, str | None]:
+    """Decide whether a successful HTTP fetch is a usable robots.txt.
+
+    Returns ``(status, error)``:
+
+    * ``("ok", None)`` -- a real robots.txt we can archive and diff.
+    * ``("blocked", msg)`` -- the server did not return HTTP 200 (e.g. a 403
+      challenge or a 5xx). The body, if any, is not the file we asked for.
+    * ``("non-robots-response", msg)`` -- HTTP 200 but the payload is HTML or
+      otherwise not a robots.txt (bot-challenge page, error page, SPA shell).
+
+    A non-``ok`` status is treated as a soft error by the caller: recorded in
+    metadata for visibility, but it never overwrites the last-good copy and
+    never flags a change. This stops rotating challenge/error pages from
+    masquerading as robots.txt edits.
+    """
+    status_code = result["http_status"]
+    if status_code != 200:
+        return "blocked", f"HTTP {status_code} (expected 200)"
+
+    ctype = (result["content_type"] or "").lower()
+    if "html" in ctype:
+        return "non-robots-response", f"HTML Content-Type: {result['content_type']}"
+    # robots.txt is plain text. Many servers send text/plain, an odd text/*
+    # type, or no Content-Type at all -- all acceptable here. A clearly
+    # non-text type (json, xml, octet-stream, image, ...) is not.
+    if ctype and not ctype.startswith("text/") and "plain" not in ctype:
+        return "non-robots-response", f"non-text Content-Type: {result['content_type']}"
+
+    # Body sniff: decode leniently and look for HTML markers near the top, or a
+    # complete absence of robots.txt directives anywhere in the body.
+    text = result["body"].decode("utf-8", errors="replace").lower()
+    head = text.lstrip()[:2048]
+    if any(marker in head for marker in HTML_MARKERS):
+        return "non-robots-response", "body looks like HTML, not robots.txt"
+    if not any(directive in text for directive in ROBOTS_DIRECTIVES):
+        return "non-robots-response", "body has no robots.txt directives"
+    return "ok", None
+
+
 def fetch_one(session: requests.Session, url: str) -> dict:
     """Fetch a single robots.txt with retry/backoff.
 
@@ -198,6 +246,50 @@ def fetch_one(session: requests.Session, url: str) -> dict:
     }
 
 
+def record_soft_error(domain_dir: Path, org_name: str, domain: str,
+                      robots_url: str, fetched_at: str, result: dict,
+                      prev_meta: dict | None, status: str, error: str,
+                      origin: str, dry_run: bool) -> dict:
+    """Record a soft error (network failure, blocked, or non-robots response).
+
+    Writes meta.json only -- it does NOT overwrite the last-good robots.txt and
+    does NOT flag a change. The last-good content fields are carried forward so
+    change detection survives the outage (a null hash here would make the next
+    good fetch look like a fresh baseline). Returns the run-level summary dict.
+    """
+    meta = {
+        "org_name": org_name,
+        "domain": domain,
+        "robots_url": robots_url,
+        "fetched_at_utc": fetched_at,
+        # Diagnostic fields from the failed attempt (None on a network error).
+        "http_status": result["http_status"],
+        "final_url": result["final_url"],
+        "redirected": result["redirected"],
+        # Last-good content carried forward so change detection stays intact.
+        "content_sha256": (prev_meta or {}).get("content_sha256"),
+        "content_bytes": (prev_meta or {}).get("content_bytes"),
+        "last_modified_header": (prev_meta or {}).get("last_modified_header"),
+        "etag_header": (prev_meta or {}).get("etag_header"),
+        # Record the offending Content-Type when we have one (diagnostic);
+        # otherwise carry forward the last-good value.
+        "content_type": result["content_type"] or (prev_meta or {}).get("content_type"),
+        "runner_origin": origin,
+        "status": status,
+        "error": error,
+    }
+    if not dry_run:
+        domain_dir.mkdir(parents=True, exist_ok=True)
+        (domain_dir / "meta.json").write_text(
+            json.dumps(meta, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8",
+        )
+    return {
+        "domain": domain, "org_name": org_name, "status": status,
+        "changed": False, "snapshot_path": None,
+    }
+
+
 def process_org(session: requests.Session, org: dict, origin: str,
                 dry_run: bool) -> dict:
     """Fetch, archive, and change-detect one organization.
@@ -217,39 +309,25 @@ def process_org(session: requests.Session, org: dict, origin: str,
 
     domain_dir = DATA_DIR / safe_domain(domain)
 
+    # A network/transport failure is a soft error.
     if result["error"] is not None:
-        # Fetch failed. Do NOT overwrite the last-good robots.txt. Record the
-        # error in meta.json, but carry forward the last-good content fields so
-        # change detection survives a transient outage (a null hash here would
-        # make the next good fetch look like a fresh baseline).
-        meta = {
-            "org_name": org_name,
-            "domain": domain,
-            "robots_url": robots_url,
-            "fetched_at_utc": fetched_at,
-            "http_status": result["http_status"],
-            "final_url": result["final_url"],
-            "redirected": result["redirected"],
-            "content_sha256": prev_sha,
-            "content_bytes": (prev_meta or {}).get("content_bytes"),
-            "last_modified_header": (prev_meta or {}).get("last_modified_header"),
-            "etag_header": (prev_meta or {}).get("etag_header"),
-            "content_type": (prev_meta or {}).get("content_type"),
-            "runner_origin": origin,
-            "error": result["error"],
-        }
-        if not dry_run:
-            domain_dir.mkdir(parents=True, exist_ok=True)
-            (domain_dir / "meta.json").write_text(
-                json.dumps(meta, indent=2, ensure_ascii=False) + "\n",
-                encoding="utf-8",
-            )
-        return {
-            "domain": domain, "org_name": org_name, "error": True,
-            "changed": False, "snapshot_path": None,
-        }
+        return record_soft_error(
+            domain_dir, org_name, domain, robots_url, fetched_at, result,
+            prev_meta, "fetch_error", result["error"], origin, dry_run,
+        )
 
-    # --- Success path ---
+    # The fetch returned a response, but it may not be a usable robots.txt
+    # (non-200, HTML challenge/error page, SPA shell, ...). Those are soft
+    # errors too: visible in metadata, but never overwrite good data or flag a
+    # change.
+    status, error = classify_response(result)
+    if status != "ok":
+        return record_soft_error(
+            domain_dir, org_name, domain, robots_url, fetched_at, result,
+            prev_meta, status, error, origin, dry_run,
+        )
+
+    # --- Good capture: a real robots.txt ---
     body = result["body"]
     new_sha = sha256_hex(body)
     new_bytes = len(body)
@@ -268,6 +346,7 @@ def process_org(session: requests.Session, org: dict, origin: str,
         "etag_header": result["etag_header"],
         "content_type": result["content_type"],
         "runner_origin": origin,
+        "status": "ok",
         "error": None,
     }
 
@@ -318,7 +397,7 @@ def process_org(session: requests.Session, org: dict, origin: str,
     return {
         "domain": domain,
         "org_name": org_name,
-        "error": False,
+        "status": "ok",
         "changed": changed,
         "kind": kind,
         "prev_bytes": (prev_meta or {}).get("content_bytes"),
@@ -401,33 +480,41 @@ def main() -> int:
           + (" [DRY RUN]" if args.dry_run else ""))
 
     changes: list[dict] = []
-    errors = 0
+    counts = {"ok": 0, "fetch_error": 0, "blocked": 0, "non-robots-response": 0}
     for org in orgs:
         summary = process_org(session, org, origin, args.dry_run)
-        status = (
-            "ERROR" if summary["error"]
-            else summary.get("kind", "?").upper()
-        )
-        print(f"  [{status:9}] {summary['domain']} — {summary['org_name']}")
-        if summary["error"]:
-            errors += 1
+        counts[summary["status"]] += 1
+        # Display label: change classification for good captures, otherwise the
+        # data-quality status.
+        if summary["status"] == "ok":
+            label = summary["kind"].upper()
+        else:
+            label = summary["status"].upper().replace("-", "_")
+        print(f"  [{label:19}] {summary['domain']} — {summary['org_name']}")
         if summary["changed"]:
             changes.append(summary)
 
     # ALWAYS append a runs.csv row — even on a no-change run — so every run
-    # produces a commit and the scheduled workflow stays alive.
+    # produces a commit and the scheduled workflow stays alive. The soft-error
+    # columns (fetch_errors / blocked / non_robots_responses) surface
+    # data-quality issues instead of letting them pass silently.
     append_csv(RUNS_CSV, RUNS_HEADER, {
         "run_at_utc": run_at,
         "orgs_checked": len(orgs),
-        "fetch_errors": errors,
+        "ok_captures": counts["ok"],
         "changes_detected": len(changes),
+        "fetch_errors": counts["fetch_error"],
+        "blocked": counts["blocked"],
+        "non_robots_responses": counts["non-robots-response"],
         "runner_origin": origin,
     }, args.dry_run)
 
     write_workflow_outputs(changes, run_date)
 
-    print(f"Done: {len(orgs)} checked, {errors} error(s), "
-          f"{len(changes)} change(s) detected.")
+    print(f"Done: {len(orgs)} checked — {counts['ok']} ok, "
+          f"{len(changes)} change(s); soft errors: "
+          f"{counts['fetch_error']} fetch, {counts['blocked']} blocked, "
+          f"{counts['non-robots-response']} non-robots.")
     return 0
 
 

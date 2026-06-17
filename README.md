@@ -24,7 +24,10 @@ Once a week, for each organization, the pipeline records:
 - the server's `Last-Modified` and `ETag` headers, where provided — useful
   because `Last-Modified` reflects when the organization itself last edited the
   file, independent of our polling cadence;
-- the capture timestamp and the runner origin.
+- the capture timestamp and the runner origin;
+- a `status` field recording whether the fetch yielded a usable robots.txt
+  (`ok`) or a data-quality problem (`fetch_error`, `blocked`,
+  `non-robots-response` — see *Response validation* below).
 
 When a file's content changes between runs, the pipeline writes a dated snapshot,
 logs the change, and opens a GitHub Issue summarizing it.
@@ -63,9 +66,46 @@ are not byte-comparable to live fetches. The **first automated run is the true t
 for the longitudinal series. See `baseline_may2026/README.md` for details.
 
 **Change detection is content-hash based.** A change is any difference in the
-captured bytes. Cosmetic differences (e.g. whitespace) are therefore treated as
-changes; qualitative coding of *what kind* of change occurred is done separately,
-using the preserved diffs.
+captured bytes. Cosmetic differences (e.g. whitespace, reordered directives) are
+therefore treated as changes; qualitative coding of *what kind* of change
+occurred is done separately, using the preserved diffs.
+
+**Response validation guards against false changes.** Some sites do not return a
+plain robots.txt to an automated client: they serve a bot-challenge page (e.g.
+Cloudflare "Just a moment…"), an HTTP error page (e.g. a Varnish 403), or a
+JavaScript single-page-app shell. Those bodies often contain rotating tokens, so
+naïve byte-hashing would flag a "change" on every run. Before archiving, the
+fetcher validates each response and assigns a `status`:
+
+- `ok` — HTTP 200 with a body that looks like a robots.txt (plain-text-ish, and
+  containing at least one `User-agent`/`Disallow`/`Allow`/`Sitemap` directive).
+- `blocked` — the server did not return HTTP 200 (e.g. a 403 challenge or a 5xx).
+- `non-robots-response` — HTTP 200 but the payload is HTML or otherwise not a
+  robots.txt (challenge page, error page, SPA shell).
+- `fetch_error` — a network/transport failure (timeout, connection error).
+
+Any non-`ok` status is treated as a **soft error**: it is recorded in `meta.json`
+and counted in `logs/runs.csv`, but it does **not** overwrite the last-good
+`robots.txt` and does **not** flag a change. This keeps transient outages and
+bot-protection pages from contaminating the longitudinal record while still
+making them visible as data-quality issues.
+
+## Log file schemas
+
+`logs/changes.csv` — append-only, one row per detected change:
+
+`detected_at_utc, number, org_name, domain, prev_sha256, new_sha256,
+prev_last_modified, new_last_modified, prev_bytes, new_bytes, snapshot_path`
+
+`logs/runs.csv` — append-only, one row per run (also the keep-alive commit that
+prevents the 60-day auto-disable of scheduled workflows):
+
+`run_at_utc, orgs_checked, ok_captures, changes_detected, fetch_errors, blocked,
+non_robots_responses, runner_origin`
+
+The three soft-error columns (`fetch_errors`, `blocked`, `non_robots_responses`)
+surface data-quality issues per run. Rows recorded before response validation was
+introduced leave those columns blank.
 
 ## The organization list
 
