@@ -1,0 +1,3 @@
+# CanRobots — pinned runtime dependencies.
+# Deliberately minimal: only an HTTP client. Everything else is the standard library.
+requests==2.34.2

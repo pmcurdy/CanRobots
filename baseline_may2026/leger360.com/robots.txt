@@ -1,0 +1,22 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /cgi-bin/
+Disallow: /my-account/
+Disallow: /?s=*
+Disallow: .pdf?utm_source=*
+Allow: /
+
+# AI-focused bots
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-Claude
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://leger360.com/sitemap_index.xml

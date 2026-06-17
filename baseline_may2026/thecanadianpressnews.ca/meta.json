@@ -1,0 +1,16 @@
+{
+  "number": 24,
+  "org_name": "The Canadian Press",
+  "domain": "thecanadianpressnews.ca",
+  "source_doc": "Canadian",
+  "robots_url": "https://thecanadianpressnews.ca/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "3442f91fec75e387a2007ae1cba2a76d1c0e2c540c9bcee74f21499ba20b43a2",
+  "content_bytes": 3550,
+  "lines": 212,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

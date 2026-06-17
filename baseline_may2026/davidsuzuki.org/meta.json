@@ -1,0 +1,16 @@
+{
+  "number": 4,
+  "org_name": "David Suzuki Foundation",
+  "domain": "davidsuzuki.org",
+  "source_doc": "Canadian",
+  "robots_url": "https://davidsuzuki.org/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "bc0035eb49f1836c6670e8aea5db84c70fb9149b924c7f223e357e1f8270ce7e",
+  "content_bytes": 174,
+  "lines": 8,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

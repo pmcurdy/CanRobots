@@ -1,0 +1,16 @@
+{
+  "number": 41,
+  "org_name": "IISD",
+  "domain": "iisd.org",
+  "source_doc": "Canadian",
+  "robots_url": "https://www.iisd.org/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "db1c70528d5ad0a6827d75bf50ed0ff6b6fa3abeab9ead10fcbc3de57bd143ad",
+  "content_bytes": 1637,
+  "lines": 63,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

@@ -1,0 +1,16 @@
+{
+  "number": 12,
+  "org_name": "La Presse",
+  "domain": "lapresse.ca",
+  "source_doc": "Canadian",
+  "robots_url": "https://lapresse.ca/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "5a0587f48988e4080729cc334283e8ecb8d1aae1b32ddef2800e496ed5ac9d37",
+  "content_bytes": 2293,
+  "lines": 82,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

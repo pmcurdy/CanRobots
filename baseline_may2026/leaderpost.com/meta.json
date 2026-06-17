@@ -1,0 +1,16 @@
+{
+  "number": 45,
+  "org_name": "Regina Leader-Post (Postmedia)",
+  "domain": "leaderpost.com",
+  "source_doc": "Canadian",
+  "robots_url": "https://leaderpost.com/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "f4bf4ac1708b0013b92ac1ffcf196decfbd877d497a7c7baa537e027aa47c8e1",
+  "content_bytes": 864,
+  "lines": 34,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

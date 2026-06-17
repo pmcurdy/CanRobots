@@ -1,0 +1,51 @@
+number,source_doc,org_name,domain,lines,bytes,first_line
+1,Canadian,The Narwhal,thenarwhal.ca,8,195,User-agent: *
+2,Canadian,Canada's National Observer,nationalobserver.com,226,4122,#
+3,Canadian,Canadian Climate Institute,climateinstitute.ca,9,194,Crawl-delay: 10
+4,Canadian,David Suzuki Foundation,davidsuzuki.org,8,174,# START YOAST BLOCK
+5,Canadian,Pembina Institute,pembina.org,73,2027,#
+6,Canadian,The Energy Mix,theenergymix.com,11,193,User-agent: *
+7,Canadian,Clean Energy Canada,cleanenergycanada.org,13,453,User-Agent: *
+8,Canadian,The Tyee,thetyee.ca,4,61,User-agent: *
+9,Canadian,CBC,cbc.ca,88,2195,"# robots, scram"
+10,Canadian,The Hub,thehub.ca,84,1569,User-agent: *
+11,Canadian,Le Devoir,ledevoir.com,244,3689,# Le contenu du Devoir est mis à disposition selon nos conditions d'utilisation.
+12,Canadian,La Presse,lapresse.ca,82,2293,# Le contenu La Presse est mis à disposition selon nos conditions d'utilisation.
+13,Canadian,The Globe and Mail,theglobeandmail.com,572,7530,User-agent: AmazonAdBot
+14,Canadian,The Walrus,thewalrus.ca,23,617,User-agent: *
+15,Canadian,Toronto Star,thestar.com,382,7807,User-agent: AI2Bot
+16,Canadian,Ricochet Media,ricochet.media,3,42,user-agent: * 
+17,Canadian,Le Journal de Montréal,journaldemontreal.com,339,6129,"# robots.txt, 2014/09/21"
+18,Canadian,Le Journal de Québec,journaldequebec.com,338,6049,"# robots.txt, 2014/09/21"
+19,Canadian,Ottawa Citizen (Postmedia),ottawacitizen.com,34,882,User-agent: AmazonAdBot
+20,Canadian,CTV News (Bell Media),ctvnews.ca,67,1535,Sitemap: https://www.ctvnews.ca/arc/outboundfeeds/sitemap-index/
+21,Canadian,TVO,tvo.org,17,593,# https://www.robotstxt.org/robotstxt.html
+22,Canadian,Radio-Canada,ici.radio-canada.ca,115,3471,User-agent: *           # directed to all spiders
+23,Canadian,Noovo Info (Bell Media),noovo.info,47,1020,Sitemap: https://www.noovo.info/arc/outboundfeeds/sitemap-index/
+24,Canadian,The Canadian Press,thecanadianpressnews.ca,212,3550,User-agent: AI2Bot
+25,Canadian,Maclean's,macleans.ca,8,145,User-agent: *
+26,Canadian,Calgary Herald (Postmedia),calgaryherald.com,34,882,User-agent: AmazonAdBot
+27,Canadian,National Post (Postmedia),nationalpost.com,34,876,User-agent: AmazonAdBot
+28,Canadian,Ecoanalytics,ecoanalyticscanada.org,5,123,User-agent: *
+29,Canadian,West Coast Environmental Law,wcel.org,133,3765,"# As a condition of accessing this website, you agree to abide by the following"
+30,Canadian,East Coast Environmental Law,ecelaw.ca,62,1504,# Squarespace Robots Txt
+31,Canadian,CAPE (Canadian Association of Physicians for the Environment),cape.ca,12,199,User-agent: Slurp
+32,Canadian,Equiterre,equiterre.org,3,70,User-agent: *
+33,Canadian,Clean Prosperity,cleanprosperity.ca,9,193,Crawl-delay: 10
+34,Canadian,Macdonald Laurier Institute,macdonaldlaurier.ca,8,178,# START YOAST BLOCK
+35,Canadian,Oil Sands alliance (pathways alliance),oilsandsalliance.ca,9,194,Crawl-delay: 10
+36,Canadian,Indigenous clean energy,indigenouscleanenergy.com,8,199,# START YOAST BLOCK
+37,Canadian,Indigenous climate hub,indigenousclimatehub.ca,2,24,User-Agent: *
+38,Canadian,First Nation Major Projects Coalition,fnmpc.ca,5,112,User-agent: *
+39,Canadian,Indigenous climate action,indigenousclimateaction.com,62,1522,# Squarespace Robots Txt
+40,Canadian,APTN,aptn.org,73,2325,"# As a condition of accessing this website, you agree to abide by the following"
+41,Canadian,IISD,iisd.org,63,1637,#
+42,Canadian,ecojustice,ecojustice.ca,5,111,User-agent: *
+43,Canadian,Global News,globalnews.ca,18,451,Sitemap: http://globalnews.ca/news-sitemap.xml
+44,Canadian,Edmonton Journal (Postmedia),edmontonjournal.com,34,894,User-agent: AmazonAdBot
+45,Canadian,Regina Leader-Post (Postmedia),leaderpost.com,34,864,User-agent: AmazonAdBot
+46,Polling,Environics,environics.ca,28,951,User-agent: *
+47,Polling,Leger,leger360.com,22,369,User-agent: *
+48,Polling,Nanos,nanos.co,2,24,User-Agent: *
+49,Polling,Abacus,abacusdata.ca,46,1179,"# search:   building a search index and providing search results (e.g., returning"
+50,Polling,Angus Reid,angusreid.org,5,90,User-agent: *

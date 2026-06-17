@@ -1,0 +1,67 @@
+name: scrape
+
+# Weekly git-scrape of ~50 robots.txt files, plus a manual trigger for testing.
+on:
+  schedule:
+    # Mondays at 06:00 UTC (build spec A.7: weekly is cron-clean and simple).
+    - cron: "0 6 * * 1"
+  workflow_dispatch: {}
+
+# The job commits results back to the repo and opens issues, so it needs
+# read/write on contents and issues (build spec A.7). The repo setting must
+# also allow this: Settings → Actions → General → "Read and write permissions".
+permissions:
+  contents: write
+  issues: write
+
+# Avoid overlapping runs (e.g. a manual run during a scheduled one).
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch robots.txt and detect changes
+        id: fetch
+        env:
+          # fetch.py writes the issue body here when changes are detected.
+          ISSUE_BODY_FILE: ${{ runner.temp }}/issue_body.md
+        run: python scripts/fetch.py
+
+      - name: Open change issue
+        if: ${{ steps.fetch.outputs.changes_detected != '0' && steps.fetch.outputs.changes_detected != '' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "${{ steps.fetch.outputs.issue_title }}" \
+            --body-file "${{ runner.temp }}/issue_body.md" \
+            --label "robots-change" || \
+          gh issue create \
+            --title "${{ steps.fetch.outputs.issue_title }}" \
+            --body-file "${{ runner.temp }}/issue_body.md"
+
+      - name: Commit and push results
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data snapshots logs
+          if git diff --cached --quiet; then
+            echo "No changes to commit (unexpected: runs.csv should always change)."
+          else
+            git commit -m "chore: scrape $(date -u +%Y-%m-%d) (${{ steps.fetch.outputs.changes_detected }} changes)"
+            git push
+          fi

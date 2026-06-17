@@ -1,0 +1,16 @@
+{
+  "number": 46,
+  "org_name": "Environics",
+  "domain": "environics.ca",
+  "source_doc": "Polling",
+  "robots_url": "https://environics.ca/robots.txt",
+  "captured_date": "2026-05-29",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "Polling_Firms-robot-txt_files.docx",
+  "content_sha256": "649884d490e5e8920d04cdae3b9f2989d8915b5f52b1144b1b637a15e7e10b49",
+  "content_bytes": 951,
+  "lines": 28,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

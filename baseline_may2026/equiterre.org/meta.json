@@ -1,0 +1,16 @@
+{
+  "number": 32,
+  "org_name": "Equiterre",
+  "domain": "equiterre.org",
+  "source_doc": "Canadian",
+  "robots_url": "https://www.equiterre.org/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "80efcb5f8cd339a193c4177dea45a649bef4ad24ffd851ce8982d9aad9b37981",
+  "content_bytes": 70,
+  "lines": 3,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

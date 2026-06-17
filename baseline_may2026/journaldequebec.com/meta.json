@@ -1,0 +1,16 @@
+{
+  "number": 18,
+  "org_name": "Le Journal de Québec",
+  "domain": "journaldequebec.com",
+  "source_doc": "Canadian",
+  "robots_url": "https://journaldequebec.com/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "7b129f4ed6dd062449bf814d65a450d6001a03e2e19878a97c3425360d491e10",
+  "content_bytes": 6049,
+  "lines": 338,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

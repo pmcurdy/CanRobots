@@ -1,0 +1,16 @@
+{
+  "number": 49,
+  "org_name": "Abacus",
+  "domain": "abacusdata.ca",
+  "source_doc": "Polling",
+  "robots_url": "https://abacusdata.ca/robots.txt",
+  "captured_date": "2026-05-29",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "Polling_Firms-robot-txt_files.docx",
+  "content_sha256": "d0fec4ce26e3abf4895969164953a57a46ad9d3b0911120ff4bbf37606ffe32c",
+  "content_bytes": 1179,
+  "lines": 46,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

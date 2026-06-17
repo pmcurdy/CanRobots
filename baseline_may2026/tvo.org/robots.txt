@@ -1,0 +1,17 @@
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+
+sitemap: https://www.tvo.org/sitemap.xml
+sitemap: https://feed.tvo.org/politics
+sitemap: https://feed.tvo.org/opinion
+sitemap: https://feed.tvo.org/indigenous
+sitemap: https://feed.tvo.org/coronavirus
+sitemap: https://feed.tvo.org/society
+sitemap: https://feed.tvo.org/ontario-hubs
+sitemap: https://feed.tvo.org/videos/agenda
+sitemap: https://feed.tvo.org/videos/documentaries
+sitemap: https://feed.tvo.org/economy
+sitemap: https://feed.tvo.org/affordability
+sitemap: https://feed.tvo.org/health
+sitemap: https://feed.tvo.org/history

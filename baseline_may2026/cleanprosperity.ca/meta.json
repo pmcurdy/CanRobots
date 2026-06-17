@@ -1,0 +1,16 @@
+{
+  "number": 33,
+  "org_name": "Clean Prosperity",
+  "domain": "cleanprosperity.ca",
+  "source_doc": "Canadian",
+  "robots_url": "https://cleanprosperity.ca/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "6f4dd6b36eaf6f84d9aa3cd307cd29913d9307d148a630c06bced6c16352d9e2",
+  "content_bytes": 193,
+  "lines": 9,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

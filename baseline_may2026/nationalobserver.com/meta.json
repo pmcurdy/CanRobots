@@ -1,0 +1,16 @@
+{
+  "number": 2,
+  "org_name": "Canada's National Observer",
+  "domain": "nationalobserver.com",
+  "source_doc": "Canadian",
+  "robots_url": "https://nationalobserver.com/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "746729cdbc1d4e74a332d39bd2083d7101add4c093093400b197d931bc55fa08",
+  "content_bytes": 4122,
+  "lines": 226,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

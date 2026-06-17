@@ -1,0 +1,16 @@
+{
+  "number": 10,
+  "org_name": "The Hub",
+  "domain": "thehub.ca",
+  "source_doc": "Canadian",
+  "robots_url": "https://thehub.ca/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "dd2bd98235c94ffafc812d3b1f2d167b9bf6129c10ffa0c0bb29d8e55e8f2891",
+  "content_bytes": 1569,
+  "lines": 84,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

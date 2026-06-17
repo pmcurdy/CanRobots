@@ -1,0 +1,16 @@
+{
+  "number": 6,
+  "org_name": "The Energy Mix",
+  "domain": "theenergymix.com",
+  "source_doc": "Canadian",
+  "robots_url": "https://theenergymix.com/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "10bdfdd087621559fecea75d669c5fdda6d0ad11dcb1e8e23621d7916bd6b115",
+  "content_bytes": 193,
+  "lines": 11,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

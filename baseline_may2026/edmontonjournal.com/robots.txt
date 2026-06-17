@@ -1,0 +1,34 @@
+User-agent: AmazonAdBot
+Disallow: /wp-admin/
+Disallow: /cms-admin/
+
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /*?
+Disallow: /cms-admin/
+Allow: /wp-admin/admin-ajax.php
+Allow: /sitemap-story.xml?
+Allow: /sitemap-wired-video.xml?
+Allow: /sitemap-exclusive-video.xml?
+Allow: /*?r
+Allow: /*?amu
+
+User-agent: Googlebot-News
+Disallow: /category/sponsored/
+Disallow: /sponsored/
+Disallow: /category/uncategorized/
+
+User-agent: omgilibot
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+X-RSL: https://common-assets.gprod.postmedia.digital/assets/postmedia-network-license.xml
+
+Sitemap: https://edmontonjournal.com/sitemap.xml
+Sitemap: https://edmontonjournal.com/sitemap-news.xml
+Sitemap: https://edmontonjournal.com/sitemap-category.xml
+Sitemap: https://edmontonjournal.com/sitemap-video.xml
+Sitemap: https://edmontonjournal.com/sitemap-old.xml
+Sitemap: https://edmontonjournal.com/sitemap-static.xml

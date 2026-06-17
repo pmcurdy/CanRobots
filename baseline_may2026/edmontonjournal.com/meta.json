@@ -1,0 +1,16 @@
+{
+  "number": 44,
+  "org_name": "Edmonton Journal (Postmedia)",
+  "domain": "edmontonjournal.com",
+  "source_doc": "Canadian",
+  "robots_url": "https://edmontonjournal.com/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "cec0a2ff50d0a183ef522d3ae1d585d3bada8f476c15f106bcca83d77bc8a58c",
+  "content_bytes": 894,
+  "lines": 34,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

@@ -1,0 +1,16 @@
+{
+  "number": 22,
+  "org_name": "Radio-Canada",
+  "domain": "ici.radio-canada.ca",
+  "source_doc": "Canadian",
+  "robots_url": "https://ici.radio-canada.ca/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "0861d1bef36127447d426bb5bf474a5e55395c3f006261c570c7167d91047add",
+  "content_bytes": 3471,
+  "lines": 115,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

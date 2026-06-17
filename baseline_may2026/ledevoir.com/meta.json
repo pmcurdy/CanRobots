@@ -1,0 +1,16 @@
+{
+  "number": 11,
+  "org_name": "Le Devoir",
+  "domain": "ledevoir.com",
+  "source_doc": "Canadian",
+  "robots_url": "https://ledevoir.com/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "2f69545d1aaf205fd12fcdaad104c0cbfead435291a3f31ce0bc65341250d806",
+  "content_bytes": 3689,
+  "lines": 244,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

@@ -1,0 +1,16 @@
+{
+  "number": 26,
+  "org_name": "Calgary Herald (Postmedia)",
+  "domain": "calgaryherald.com",
+  "source_doc": "Canadian",
+  "robots_url": "https://calgaryherald.com/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "dbd0558b2112676c189b0563df4ddf5623e98517286165f19f3a2297f9a3240a",
+  "content_bytes": 882,
+  "lines": 34,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

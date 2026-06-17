@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /wp-admin/admin-ajax.php
+Disallow: /wp-admin/
+Disallow: /*controller=ai1ec_exporter_controller*
+Disallow: /*/action~*/
+Disallow: /events/action~posterboard/
+Disallow: /events/action~agenda/
+Disallow: /events/action~oneday/
+Disallow: /events/action~month/
+Disallow: /events/action~week/
+Disallow: /events/action~stream/
+Disallow: /events/action~undefined/
+Disallow: /events/action~default/
+Disallow: /events/action~poster/
+Disallow: /events/action~*/
+Disallow: /wp-includes/
+Disallow: /wls/
+Disallow: /ecards/
+
+Sitemap: https://thewalrus.ca/sitemap.rss
+
+
+Sitemap: https://thewalrus.ca/sitemap.xml

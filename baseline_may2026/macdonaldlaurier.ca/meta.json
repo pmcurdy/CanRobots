@@ -1,0 +1,16 @@
+{
+  "number": 34,
+  "org_name": "Macdonald Laurier Institute",
+  "domain": "macdonaldlaurier.ca",
+  "source_doc": "Canadian",
+  "robots_url": "https://macdonaldlaurier.ca/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "7c52965027f434875ff3a25f16ac7571f6e070a894a2b162cf6701175ded9a1a",
+  "content_bytes": 178,
+  "lines": 8,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

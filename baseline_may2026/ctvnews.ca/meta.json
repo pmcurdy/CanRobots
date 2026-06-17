@@ -1,0 +1,16 @@
+{
+  "number": 20,
+  "org_name": "CTV News (Bell Media)",
+  "domain": "ctvnews.ca",
+  "source_doc": "Canadian",
+  "robots_url": "https://ctvnews.ca/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "155b53bc029fbd81fb1cc80e7f450e892fbc9535bb54ee60a3363ae5daf94e91",
+  "content_bytes": 1535,
+  "lines": 67,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

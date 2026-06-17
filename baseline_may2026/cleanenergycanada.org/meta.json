@@ -1,0 +1,16 @@
+{
+  "number": 7,
+  "org_name": "Clean Energy Canada",
+  "domain": "cleanenergycanada.org",
+  "source_doc": "Canadian",
+  "robots_url": "https://cleanenergycanada.org/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "351a1b8ad156e885a0b19b4c8101ff7cca1bb66465a6c18d7a239e6000587da4",
+  "content_bytes": 453,
+  "lines": 13,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}

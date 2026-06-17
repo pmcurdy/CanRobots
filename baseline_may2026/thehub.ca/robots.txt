@@ -1,0 +1,84 @@
+User-agent: *
+Disallow: /wp-content/uploads/wc-logs/
+Disallow: /wp-content/uploads/woocommerce_transient_files/
+Disallow: /wp-content/uploads/woocommerce_uploads/
+Disallow: /*?add-to-cart=
+Disallow: /*?*add-to-cart=
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Crawl-delay: 10
+# --- AI Crawler Blocks (Hub Traffic Logger) ---
+User-agent: GPTBot
+Disallow: /
+# OpenAI (ChatGPT training & web browsing)
+
+User-agent: ChatGPT-User
+Disallow: /
+# OpenAI ChatGPT browse mode
+
+User-agent: OAI-SearchBot
+Disallow: /
+# OpenAI search feature
+
+User-agent: ClaudeBot
+Disallow: /
+# Anthropic (Claude AI training)
+
+User-agent: anthropic-ai
+Disallow: /
+# Anthropic alternate crawler
+
+User-agent: Bytespider
+Disallow: /
+# ByteDance / TikTok AI
+
+User-agent: PerplexityBot
+Disallow: /
+# Perplexity AI search
+
+User-agent: YouBot
+Disallow: /
+# You.com AI search
+
+User-agent: CCBot
+Disallow: /
+# Common Crawl (used by many LLMs)
+
+User-agent: Amazonbot
+Disallow: /
+# Amazon Alexa / AI assistant
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+# Meta AI training
+
+User-agent: FacebookBot
+Disallow: /
+# Meta AI features
+
+User-agent: Diffbot
+Disallow: /
+# Diffbot AI extraction
+
+User-agent: Omgili
+Disallow: /
+# Omgili content aggregator
+
+User-agent: Cohere-ai
+Disallow: /
+# Cohere LLM training
+
+User-agent: Google-Extended
+Allow: /
+# Google AI features — allowed (drives search traffic)
+
+# --- End AI Crawler Blocks ---
+
+# START YOAST BLOCK
+# ---------------------------
+User-agent: *
+Disallow:
+
+Sitemap: https://thehub.ca/sitemap_index.xml
+# ---------------------------
+# END YOAST BLOCK

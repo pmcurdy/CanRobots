@@ -1,0 +1,16 @@
+{
+  "number": 9,
+  "org_name": "CBC",
+  "domain": "cbc.ca",
+  "source_doc": "Canadian",
+  "robots_url": "https://cbc.ca/robots.txt",
+  "captured_date": "2026-05-28",
+  "source": "docx-import",
+  "method": "manual",
+  "origin": "unknown",
+  "source_file": "canadian_robots_txt_files.docx",
+  "content_sha256": "e4a9683c27c03ce852ccd7ec5aea104171019e725943d4b2c69796a8092b54ae",
+  "content_bytes": 2195,
+  "lines": 88,
+  "note": "Baseline reference copy imported from manually-captured docx. NOT a pipeline fetch; whitespace/line-endings may differ from a live HTTP capture, so this hash is NOT comparable to live-run hashes. Reference frame RF-v1."
+}
