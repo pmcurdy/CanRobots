@@ -1,0 +1,16 @@
+{
+  "org_name": "IISD",
+  "domain": "iisd.org",
+  "robots_url": "https://www.iisd.org/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:55Z",
+  "http_status": 200,
+  "final_url": "https://www.iisd.org/robots.txt",
+  "redirected": false,
+  "content_sha256": "29435e28740e47eb918cacd562bd711d392ee95113e8ec0c137ba8cc1927a992",
+  "content_bytes": 1636,
+  "last_modified_header": "Thu, 30 May 2024 14:43:01 GMT",
+  "etag_header": "W/\"664-619ace2426ba8\"",
+  "content_type": "text/plain; charset=UTF-8",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

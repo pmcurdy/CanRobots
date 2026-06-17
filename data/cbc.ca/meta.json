@@ -1,0 +1,16 @@
+{
+  "org_name": "CBC",
+  "domain": "cbc.ca",
+  "robots_url": "https://cbc.ca/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:17:35Z",
+  "http_status": null,
+  "final_url": null,
+  "redirected": null,
+  "content_sha256": null,
+  "content_bytes": null,
+  "last_modified_header": null,
+  "etag_header": null,
+  "content_type": null,
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": "ReadTimeout: HTTPSConnectionPool(host='cbc.ca', port=443): Read timed out. (read timeout=20)"
+}

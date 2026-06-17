@@ -1,0 +1,16 @@
+{
+  "org_name": "Edmonton Journal (Postmedia)",
+  "domain": "edmontonjournal.com",
+  "robots_url": "https://edmontonjournal.com/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:56Z",
+  "http_status": 200,
+  "final_url": "https://edmontonjournal.com/robots.txt",
+  "redirected": false,
+  "content_sha256": "740fc31ab5a34e937e41be289aaeb813f10178d2bd883c226e58d2f237398a61",
+  "content_bytes": 893,
+  "last_modified_header": "Wed, 17 Jun 2026 19:18:57 GMT",
+  "etag_header": null,
+  "content_type": "text/plain",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

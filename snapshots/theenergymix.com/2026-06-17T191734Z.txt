@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+User-agent: bingbot
+Crawl-delay: 5
+
+User-agent: barkrowler
+Crawl-Delay: 5
+
+Sitemap: https://www.theenergymix.com/sitemap.xml

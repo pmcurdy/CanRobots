@@ -1,0 +1,16 @@
+{
+  "org_name": "Macdonald Laurier Institute",
+  "domain": "macdonaldlaurier.ca",
+  "robots_url": "https://macdonaldlaurier.ca/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:54Z",
+  "http_status": 200,
+  "final_url": "https://macdonaldlaurier.ca/robots.txt",
+  "redirected": false,
+  "content_sha256": "5b7b026b26d172d8a247e05407ac5898365f6d519beb1cbc6bb7d4291d1eb283",
+  "content_bytes": 179,
+  "last_modified_header": null,
+  "etag_header": null,
+  "content_type": "text/plain; charset=utf-8",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

@@ -1,0 +1,7 @@
+
+
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+User-agent: *
+Crawl-delay: 600

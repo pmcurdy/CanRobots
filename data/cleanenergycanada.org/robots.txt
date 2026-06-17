@@ -1,0 +1,13 @@
+User-Agent: *
+Allow: /wp-admin/admin-ajax.php
+Allow: /wp-content/uploads/
+Disallow: /wp-content/plugins/
+Disallow: /wp-admin/
+Disallow: /readme.html
+Disallow: /refer/
+ 
+Sitemap: https://cleanenergycanada.org/post-sitemap.xml
+Sitemap: https://cleanenergycanada.org/page-sitemap.xml
+Sitemap: https://cleanenergycanada.org/story-sitemap.xml
+Sitemap: https://cleanenergycanada.org/story-sitemap.xml
+Sitemap: https://cleanenergycanada.org/report-sitemap.xml

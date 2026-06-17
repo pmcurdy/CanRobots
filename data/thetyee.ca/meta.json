@@ -1,0 +1,16 @@
+{
+  "org_name": "The Tyee",
+  "domain": "thetyee.ca",
+  "robots_url": "https://thetyee.ca/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:17:35Z",
+  "http_status": 403,
+  "final_url": "https://thetyee.ca/robots.txt",
+  "redirected": false,
+  "content_sha256": "3c21d45a2b70a9fec735b0dd249146a975c41bcac0b183824afc34a4af220bca",
+  "content_bytes": 5729,
+  "last_modified_header": null,
+  "etag_header": null,
+  "content_type": "text/html; charset=UTF-8",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

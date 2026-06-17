@@ -1,0 +1,16 @@
+{
+  "org_name": "The Walrus",
+  "domain": "thewalrus.ca",
+  "robots_url": "https://thewalrus.ca/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:46Z",
+  "http_status": 403,
+  "final_url": "https://thewalrus.ca/robots.txt",
+  "redirected": false,
+  "content_sha256": "0198475d529c7a970700035e900b4eb6cc1c3385c736b5d1bb93218a44624155",
+  "content_bytes": 5688,
+  "last_modified_header": null,
+  "etag_header": null,
+  "content_type": "text/html; charset=UTF-8",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

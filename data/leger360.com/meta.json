@@ -1,0 +1,16 @@
+{
+  "org_name": "Leger",
+  "domain": "leger360.com",
+  "robots_url": "https://leger360.com/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:57Z",
+  "http_status": 200,
+  "final_url": "https://leger360.com/robots.txt",
+  "redirected": false,
+  "content_sha256": "81c0c3751e38b9d2dc6e83b58a5b23ed3719eb8de76757c37d034f297035cf6a",
+  "content_bytes": 389,
+  "last_modified_header": "Wed, 20 Aug 2025 10:14:31 GMT",
+  "etag_header": "\"68a5a007-185\"",
+  "content_type": "text/plain",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

@@ -1,0 +1,16 @@
+{
+  "org_name": "Ecoanalytics",
+  "domain": "ecoanalyticscanada.org",
+  "robots_url": "https://ecoanalyticscanada.org/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:51Z",
+  "http_status": 200,
+  "final_url": "https://ecoanalyticscanada.org/robots.txt",
+  "redirected": false,
+  "content_sha256": "788f3c83708d6ae14d912883bc3f68896a7859b118530020f15ada244dd16af9",
+  "content_bytes": 123,
+  "last_modified_header": null,
+  "etag_header": null,
+  "content_type": "text/plain; charset=utf-8",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

@@ -1,0 +1,16 @@
+{
+  "org_name": "Regina Leader-Post (Postmedia)",
+  "domain": "leaderpost.com",
+  "robots_url": "https://leaderpost.com/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:57Z",
+  "http_status": 200,
+  "final_url": "https://leaderpost.com/robots.txt",
+  "redirected": false,
+  "content_sha256": "1d448ce02f08f30d592501f61d450f498ca45133f519463a97bcb245feede4a2",
+  "content_bytes": 863,
+  "last_modified_header": "Wed, 17 Jun 2026 19:18:57 GMT",
+  "etag_header": null,
+  "content_type": "text/plain",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

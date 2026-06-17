@@ -1,0 +1,16 @@
+{
+  "org_name": "Le Journal de Montréal",
+  "domain": "journaldemontreal.com",
+  "robots_url": "https://journaldemontreal.com/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:46Z",
+  "http_status": 200,
+  "final_url": "https://www.journaldemontreal.com/robots.txt",
+  "redirected": true,
+  "content_sha256": "c2f7c3da0801b8cb4c35fd811e09ab330afd043719531d155f8e294a2d602a70",
+  "content_bytes": 6467,
+  "last_modified_header": null,
+  "etag_header": null,
+  "content_type": "text/plain;charset=UTF-8",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

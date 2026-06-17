@@ -1,0 +1,16 @@
+{
+  "org_name": "Nanos",
+  "domain": "nanos.co",
+  "robots_url": "https://nanos.co/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:57Z",
+  "http_status": 200,
+  "final_url": "https://nanos.co/robots.txt",
+  "redirected": false,
+  "content_sha256": "e1f21c9aa28d50ca112ed357f34b67c550597effd4d42fd55b4e27300dd8f9c1",
+  "content_bytes": 24,
+  "last_modified_header": "Mon, 11 Jan 2021 18:35:41 GMT",
+  "etag_header": "W/\"5ffc9a7d-18\"",
+  "content_type": "text/plain",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

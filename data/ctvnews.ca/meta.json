@@ -1,0 +1,16 @@
+{
+  "org_name": "CTV News (Bell Media)",
+  "domain": "ctvnews.ca",
+  "robots_url": "https://ctvnews.ca/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:48Z",
+  "http_status": 200,
+  "final_url": "https://www.ctvnews.ca:443/robots.txt",
+  "redirected": true,
+  "content_sha256": "c07af64e827b3f0c77c5a2b08fb112cee3cf5b0c5bd412ab0f37613b250b7732",
+  "content_bytes": 1534,
+  "last_modified_header": "Wed, 17 Jun 2026 19:16:21 GMT",
+  "etag_header": "W/\"5fe-ckPRLOkzcY6hdeUp9NYtJvM5w2U\"",
+  "content_type": "text/plain; charset=utf-8",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

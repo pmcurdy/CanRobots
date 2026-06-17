@@ -1,0 +1,16 @@
+{
+  "org_name": "ecojustice",
+  "domain": "ecojustice.ca",
+  "robots_url": "https://ecojustice.ca/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:56Z",
+  "http_status": 200,
+  "final_url": "https://ecojustice.ca/robots.txt",
+  "redirected": false,
+  "content_sha256": "931f9a2a7997c92ad76a1dd71c8c50c61308c6a5d1dc8b1babf65af0bde7f595",
+  "content_bytes": 111,
+  "last_modified_header": null,
+  "etag_header": null,
+  "content_type": "text/plain; charset=utf-8",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

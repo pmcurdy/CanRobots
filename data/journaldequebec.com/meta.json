@@ -1,0 +1,16 @@
+{
+  "org_name": "Le Journal de Québec",
+  "domain": "journaldequebec.com",
+  "robots_url": "https://journaldequebec.com/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:47Z",
+  "http_status": 200,
+  "final_url": "https://www.journaldequebec.com/robots.txt",
+  "redirected": true,
+  "content_sha256": "c86011070aaf5c5524e707bc75469ea24ab8ac82fdd3887f3372ebfaa0fd0987",
+  "content_bytes": 6386,
+  "last_modified_header": null,
+  "etag_header": null,
+  "content_type": "text/plain;charset=UTF-8",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

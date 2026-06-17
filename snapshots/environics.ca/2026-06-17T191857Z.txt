@@ -1,0 +1,28 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-json/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /xmlrpc.php
+Disallow: /?s=
+Disallow: /search/
+Disallow: /*?*
+Crawl-delay: 10
+
+# Allow access to CSS and JS for proper rendering
+Allow: /wp-content/uploads/
+Allow: /wp-includes/js/
+Allow: /*.css$
+Allow: /*.js$
+
+# Block specific PDFs from indexing
+Disallow: /wp-content/uploads/2024/11/2022-APS-Respondent-Report-English-1.pdf
+Disallow: /wp-content/uploads/2024/11/2021-APS-Respondent-Report-Investment-Report-Final-1.pdf
+Disallow: /wp-content/uploads/2024/11/APS2023_INVESTMENTS_ENGLISH-1.pdf
+Disallow: /wp-content/uploads/2024/11/2022-APS-Respondent-Report-French.pdf
+Disallow: /wp-content/uploads/2024/11/2021-APS-Respondent-Report-Investment-Report-French-Final-1.pdf
+Disallow: /wp-content/uploads/2024/11/APS2023_INVESTMENTS_FRENCH-1.pdf
+
+# Sitemap
+Sitemap: https://environics.ca/sitemap_index.xml

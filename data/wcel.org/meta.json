@@ -1,0 +1,16 @@
+{
+  "org_name": "West Coast Environmental Law",
+  "domain": "wcel.org",
+  "robots_url": "https://www.wcel.org/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:53Z",
+  "http_status": 200,
+  "final_url": "https://www.wcel.org/robots.txt",
+  "redirected": false,
+  "content_sha256": "05d327cf53c12d2c0d72a7b7490a2cfce8b3b8876d27b1581c398b087a4b3c0e",
+  "content_bytes": 2544,
+  "last_modified_header": "Wed, 03 Jun 2026 23:13:40 GMT",
+  "etag_header": null,
+  "content_type": "text/plain",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

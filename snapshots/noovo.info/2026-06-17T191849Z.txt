@@ -1,0 +1,47 @@
+Sitemap: https://www.noovo.info/arc/outboundfeeds/sitemap-index/
+Sitemap: https://www.noovo.info/arc/outboundfeeds/sitemap-news-index/
+Sitemap: https://www.noovo.info/arc/outboundfeeds/sitemap-section-index/
+Sitemap: https://www.noovo.info/arc/outboundfeeds/sitemap-video-index/
+
+User-agent: *
+Allow: /
+Disallow: /video/_tel_1-888-933-9007
+Disallow: /content/dam/
+Disallow: /content/_cq_tags/
+Disallow: /nouvelle/_tel_1 800 659-4264
+Disallow: /video/_tel_18003639010
+Disallow: /video/_tel_18004632338
+Disallow: /nouvelle/_tel_18002632266
+Disallow: /video/_tel_18662773553
+Disallow: /nouvelle/_tel_18003639010
+Disallow: /nouvelle/_tel_18662060888
+
+User-agent: Googlebot-Image
+Allow: /resizer/v2/
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-Agent: PerplexityBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Anthropic-ai
+Disallow: /
+
+User-Agent: DeepSeek
+Disallow: /
+
+User-agent: DeepSeekBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: / 

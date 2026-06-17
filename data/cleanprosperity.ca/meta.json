@@ -1,0 +1,16 @@
+{
+  "org_name": "Clean Prosperity",
+  "domain": "cleanprosperity.ca",
+  "robots_url": "https://cleanprosperity.ca/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:53Z",
+  "http_status": 200,
+  "final_url": "https://cleanprosperity.ca/robots.txt",
+  "redirected": false,
+  "content_sha256": "f8266a9c5617cf891339dc10b6311774bc7812831b022b40b6ecb613cf7c0f29",
+  "content_bytes": 192,
+  "last_modified_header": null,
+  "etag_header": null,
+  "content_type": "text/plain; charset=utf-8",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

@@ -1,0 +1,16 @@
+{
+  "org_name": "Abacus",
+  "domain": "abacusdata.ca",
+  "robots_url": "https://abacusdata.ca/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:58Z",
+  "http_status": 200,
+  "final_url": "https://abacusdata.ca/robots.txt",
+  "redirected": false,
+  "content_sha256": "315681e2ddc40cd2c489bd9d6d472c69bcc4e53ed1a93d0dfa31707136485852",
+  "content_bytes": 1738,
+  "last_modified_header": null,
+  "etag_header": null,
+  "content_type": "text/plain; charset=utf-8",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

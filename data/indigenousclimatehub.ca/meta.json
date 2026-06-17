@@ -1,0 +1,16 @@
+{
+  "org_name": "Indigenous climate hub",
+  "domain": "indigenousclimatehub.ca",
+  "robots_url": "https://indigenousclimatehub.ca/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:55Z",
+  "http_status": 200,
+  "final_url": "https://indigenousclimatehub.ca/robots.txt",
+  "redirected": false,
+  "content_sha256": "e1f21c9aa28d50ca112ed357f34b67c550597effd4d42fd55b4e27300dd8f9c1",
+  "content_bytes": 24,
+  "last_modified_header": "Mon, 05 Oct 2020 22:54:51 GMT",
+  "etag_header": "W/\"5f7ba43b-18\"",
+  "content_type": "text/plain",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

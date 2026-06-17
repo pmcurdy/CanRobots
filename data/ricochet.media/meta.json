@@ -1,0 +1,16 @@
+{
+  "org_name": "Ricochet Media",
+  "domain": "ricochet.media",
+  "robots_url": "https://ricochet.media/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:46Z",
+  "http_status": 200,
+  "final_url": "https://ricochet.media/robots.txt",
+  "redirected": false,
+  "content_sha256": "6288dde2996947fa48d1dd7de610bc66852ec0e288a275a3f8b44c6883d5b7f2",
+  "content_bytes": 42,
+  "last_modified_header": "Sun, 13 Oct 2024 02:50:10 GMT",
+  "etag_header": "\"0670b3562-0;;;\"",
+  "content_type": "text/plain",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

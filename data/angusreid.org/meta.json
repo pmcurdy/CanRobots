@@ -1,0 +1,16 @@
+{
+  "org_name": "Angus Reid",
+  "domain": "angusreid.org",
+  "robots_url": "https://angusreid.org/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:58Z",
+  "http_status": 200,
+  "final_url": "https://angusreid.org/robots.txt",
+  "redirected": false,
+  "content_sha256": "30c1c125bf3ad2fee47a0a4e11bc850f8813b80d9a48ad9a8de32a8e5cdcddc6",
+  "content_bytes": 92,
+  "last_modified_header": "Fri, 25 Jul 2025 15:15:54 GMT",
+  "etag_header": "W/\"68839faa-5c\"",
+  "content_type": "text/plain",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

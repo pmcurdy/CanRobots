@@ -1,0 +1,226 @@
+#
+# robots.txt
+#
+# This file is to prevent the crawling and indexing of certain parts
+# of your site by web crawlers and spiders run by sites like Yahoo!
+# and Google. By telling these "robots" where not to go on your site,
+# you save bandwidth and server resources.
+#
+# This file will be ignored unless it is at the root of your host:
+# Used:    http://example.com/robots.txt
+# Ignored: http://example.com/site/robots.txt
+#
+# For more information about the robots.txt standard, see:
+# http://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+# CSS, JS, Images
+Allow: /core/*.css$
+Allow: /core/*.css?
+Allow: /core/*.js$
+Allow: /core/*.js?
+Allow: /core/*.gif
+Allow: /core/*.jpg
+Allow: /core/*.jpeg
+Allow: /core/*.png
+Allow: /core/*.svg
+Allow: /profiles/*.css$
+Allow: /profiles/*.css?
+Allow: /profiles/*.js$
+Allow: /profiles/*.js?
+Allow: /profiles/*.gif
+Allow: /profiles/*.jpg
+Allow: /profiles/*.jpeg
+Allow: /profiles/*.png
+Allow: /profiles/*.svg
+# Directories
+Disallow: /core/
+Disallow: /profiles/
+# Files
+Disallow: /README.md
+Disallow: /composer/Metapackage/README.txt
+Disallow: /composer/Plugin/ProjectMessage/README.md
+Disallow: /composer/Plugin/Scaffold/README.md
+Disallow: /composer/Plugin/VendorHardening/README.txt
+Disallow: /composer/Template/README.txt
+Disallow: /modules/README.txt
+Disallow: /sites/README.txt
+Disallow: /themes/README.txt
+# Paths (clean URLs)
+Disallow: /admin/
+Disallow: /comment/reply/
+Disallow: /filter/tips
+Disallow: /node/add/
+Disallow: /search/
+Disallow: /user/register
+Disallow: /user/password
+Disallow: /user/login
+Disallow: /user/logout
+Disallow: /media/oembed
+Disallow: /*/media/oembed
+# Paths (no clean URLs)
+Disallow: /index.php/admin/
+Disallow: /index.php/comment/reply/
+Disallow: /index.php/filter/tips
+Disallow: /index.php/node/add/
+Disallow: /index.php/search/
+Disallow: /index.php/user/password
+Disallow: /index.php/user/register
+Disallow: /index.php/user/login
+Disallow: /index.php/user/logout
+Disallow: /index.php/media/oembed
+Disallow: /index.php/*/media/oembed
+Disallow: /sites/default/files/css/*.css$
+Disallow: /sites/default/files/css/*.css?
+Disallow: /sites/default/files/js/*.js$
+Disallow: /sites/default/files/js/*.js?
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Amzn-SearchBot
+Disallow: /
+
+User-agent: Amzn-User
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: archive.org_bot
+Disallow: /
+
+User-agent: Brandwatch
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Cision
+Disallow: /
+
+User-agent: Claude
+Disallow: /
+
+User-agent: Claudebot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Deepseek
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: dotbot/1.0
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Gigabot
+Disallow: /
+
+User-agent: Gnowit
+Disallow: /
+
+User-agent: GnowitNewsbot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Grok
+Disallow: /
+
+User-agent: Heritrix
+Disallow: /
+
+User-agent: linkfluence
+Disallow: /
+
+User-agent: magpie-crawler
+Disallow: /
+
+User-agent: Meltwater
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: Meta-ExternalFetcher
+Disallow: /
+
+User-agent: Muckrack
+Disallow: /
+
+User-agent: news-api.org
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-agent: openai
+Disallow: /
+
+User-agent: OTMedia
+Disallow: /
+
+User-agent: Opoint
+Disallow: /
+
+User-agent: Perplexity
+Disallow: /
+
+User-agent: scoopit
+Disallow: /
+
+User-agent: scpitspi-rs
+Disallow: /
+
+User-agent: semantic-visions.com
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: SentiBot
+Disallow: /
+
+User-agent: trendiction
+Disallow: /
+
+User-agent: Turnitin
+Disallow: /
+
+User-agent: webzio
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+# Prevent Majestic's MJ12bot from repeatedly hitting this page
+User-Agent: MJ12bot
+Disallow: /2022/10/11/news/rbc-under-investigation-competition-bureau-alleged-greenwashing
+
+Sitemap: https://www.nationalobserver.com/sitemap.xml

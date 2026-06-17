@@ -1,0 +1,16 @@
+{
+  "org_name": "Indigenous climate action",
+  "domain": "indigenousclimateaction.com",
+  "robots_url": "https://www.indigenousclimateaction.com/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:55Z",
+  "http_status": 200,
+  "final_url": "https://www.indigenousclimateaction.com/robots.txt",
+  "redirected": false,
+  "content_sha256": "b78334c413f4b729fb718d3a0a14629c2d61607cda37a0cbb1a527b5e44f97c1",
+  "content_bytes": 1522,
+  "last_modified_header": null,
+  "etag_header": null,
+  "content_type": "text/plain;charset=utf-8",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}

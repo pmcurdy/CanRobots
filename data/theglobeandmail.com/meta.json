@@ -1,0 +1,16 @@
+{
+  "org_name": "The Globe and Mail",
+  "domain": "theglobeandmail.com",
+  "robots_url": "https://theglobeandmail.com/robots.txt",
+  "fetched_at_utc": "2026-06-17T19:18:45Z",
+  "http_status": 200,
+  "final_url": "https://www.theglobeandmail.com/robots.txt",
+  "redirected": true,
+  "content_sha256": "54dae88f29b7a33a8310de8ef4ffab54a370a601258e1f9a95b3bc0975ed9f77",
+  "content_bytes": 7529,
+  "last_modified_header": "Wed, 17 Jun 2026 19:18:08 GMT",
+  "etag_header": "W/\"1d69-2YlS6nl7qoY2/0EjdY90mUrm9mw\"",
+  "content_type": "text/plain; charset=utf-8",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "error": null
+}
