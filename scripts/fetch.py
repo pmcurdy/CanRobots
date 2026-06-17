@@ -54,7 +54,10 @@ USER_AGENT = (
     "pmccurdy@uottawa.ca; +https://github.com/pmcurdy/CanRobots)"
 )
 
-REQUEST_TIMEOUT = 20  # seconds, per attempt
+# (connect, read) timeouts in seconds, per attempt. The read timeout is
+# generous (30s) so large/slow sites like cbc.ca are less likely to throw a
+# transient ReadTimeout; the connect timeout stays short.
+REQUEST_TIMEOUT = (10, 30)
 MAX_RETRIES = 2       # number of RETRIES after the initial attempt
 RETRY_BACKOFF = 3     # seconds; multiplied by attempt number for simple backoff
 
