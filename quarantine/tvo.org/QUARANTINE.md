@@ -9,6 +9,11 @@ app. … webpackJsonptvo-cad`), not a robots.txt.
 - Body size: 5623 bytes
 - Captured: `2026-06-17T20:00:40Z` from `https://www.tvo.org:443/robots.txt`
 - Classification: **non-robots-response** (HTML body at HTTP 200)
+- **Persistence: possibly-transient.** This is HTTP 200, not a block or a rate
+  limit — and the *first* fetch the same day returned the genuine robots.txt
+  (608 bytes). So the SPA shell is intermittent, not a steady state: likely a
+  deploy/cache moment where the SPA catch-all answered the robots.txt path. A
+  re-baseline may well capture the real file again.
 
 This is the *second* capture. The **first** run captured tvo.org's genuine
 robots.txt (608 bytes, `User-agent: *` plus a sitemap list); that real baseline

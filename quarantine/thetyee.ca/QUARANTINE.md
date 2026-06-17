@@ -10,6 +10,10 @@ robots.txt.
 - Body size: 5729 bytes
 - Captured: `2026-06-17T19:58:58Z` from `https://thetyee.ca/robots.txt`
 - Classification: **blocked** (non-200)
+- **Persistence: likely-permanent.** A Cloudflare interstitial challenge served
+  to automated clients; both early fetches hit it. Unlike a 429 rate limit this
+  is not a transient throttle — it will keep returning to a plain HTTP client
+  until/unless Cloudflare's bot settings for this site change.
 
 The challenge page's rotating CSP nonce / tokens produced a false "change"
 between the two early runs. Quarantined; the org will re-baseline on the next

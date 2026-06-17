@@ -33,13 +33,18 @@ the junk — no contaminated capture re-enters the dataset.
 
 ## Contents
 
-| domain | what it actually was |
-|---|---|
-| `davidsuzuki.org` | HTTP 403 — Varnish "Error 403 Forbidden" page |
-| `equiterre.org` | HTTP 429 — Too Many Requests, HTML page |
-| `thetyee.ca` | HTTP 403 — Cloudflare "Just a moment…" challenge |
-| `thewalrus.ca` | HTTP 403 — Cloudflare "Just a moment…" challenge |
-| `tvo.org` | HTTP 200 — React single-page-app shell (not robots.txt) |
+| domain | HTTP | what it actually was | persistence |
+|---|---|---|---|
+| `davidsuzuki.org` | 403 | Varnish "Error 403 Forbidden" page | likely-permanent (consistent edge block) |
+| `equiterre.org` | 429 | Too Many Requests, HTML page | **possibly-transient** (rate limit, likely from today's test runs) |
+| `thetyee.ca` | 403 | Cloudflare "Just a moment…" challenge | likely-permanent (bot challenge) |
+| `thewalrus.ca` | 403 | Cloudflare "Just a moment…" challenge | likely-permanent (bot challenge) |
+| `tvo.org` | 200 | React single-page-app shell (not robots.txt) | **possibly-transient** (run-1 returned the real file) |
+
+"Persistence" is a first-read judgement, not a verdict: 403 Cloudflare challenges
+and steady edge 403s tend to recur, whereas a 429 (rate limit) or an
+intermittent SPA/timeout often clears on the normal cadence. Don't mislabel
+rate-limiting as blocking — let the re-baseline decide.
 
 > Note: `tvo.org`'s genuine baseline robots.txt *was* captured on the first run
 > and is preserved at `snapshots/tvo.org/2026-06-17T191848Z.txt`; only the later
