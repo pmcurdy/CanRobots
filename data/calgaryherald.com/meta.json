@@ -2,15 +2,16 @@
   "org_name": "Calgary Herald (Postmedia)",
   "domain": "calgaryherald.com",
   "robots_url": "https://calgaryherald.com/robots.txt",
-  "fetched_at_utc": "2026-06-17T20:00:41Z",
+  "fetched_at_utc": "2026-06-22T11:27:21Z",
   "http_status": 200,
   "final_url": "https://calgaryherald.com/robots.txt",
   "redirected": false,
   "content_sha256": "65c988757703d8858c413608bff33bbe78bb92069c876eee1d41731ddba676e0",
   "content_bytes": 881,
-  "last_modified_header": "Wed, 17 Jun 2026 20:00:42 GMT",
+  "last_modified_header": "Mon, 22 Jun 2026 11:27:21 GMT",
   "etag_header": null,
   "content_type": "text/plain",
   "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "status": "ok",
   "error": null
 }

@@ -1,0 +1,17 @@
+{
+  "org_name": "TVO",
+  "domain": "tvo.org",
+  "robots_url": "https://tvo.org/robots.txt",
+  "fetched_at_utc": "2026-06-22T11:27:19Z",
+  "http_status": 200,
+  "final_url": "https://www.tvo.org:443/robots.txt",
+  "redirected": true,
+  "content_sha256": null,
+  "content_bytes": null,
+  "last_modified_header": null,
+  "etag_header": null,
+  "content_type": "text/html",
+  "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "status": "non-robots-response",
+  "error": "HTML Content-Type: text/html"
+}

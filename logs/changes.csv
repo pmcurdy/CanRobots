@@ -1,1 +1,4 @@
 detected_at_utc,number,org_name,domain,prev_sha256,new_sha256,prev_last_modified,new_last_modified,prev_bytes,new_bytes,snapshot_path
+2026-06-22T11:27:15Z,11,Le Devoir,ledevoir.com,2f69545d1aaf205fd12fcdaad104c0cbfead435291a3f31ce0bc65341250d806,e6cdaba476f4308c807635a3be18d9c46e218539130dc236ec848c0cefc747c6,,,3689,3768,snapshots/ledevoir.com/2026-06-22T112715Z.txt
+2026-06-22T11:27:16Z,15,Toronto Star,thestar.com,6c952516ff4278867dcfa8e2c9863ed518ebb5cbc5ea73fe09e059e472d32015,3393c01d476b04bc903c4c7eab524b075d041c18132fc45c817c90af0daaba38,,,8189,8189,snapshots/thestar.com/2026-06-22T112716Z.txt
+2026-06-22T11:27:20Z,24,The Canadian Press,thecanadianpressnews.ca,1ba7d07e2662aa11ef5976a9dbb142769d9985b42123123132af81256983555c,030eba41773d5cb096122b336f7d9a4eb420f89c6c50e3f51dcddf76c53f2262,,,4466,4466,snapshots/thecanadianpressnews.ca/2026-06-22T112720Z.txt

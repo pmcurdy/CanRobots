@@ -2,15 +2,16 @@
   "org_name": "Maclean's",
   "domain": "macleans.ca",
   "robots_url": "https://macleans.ca/robots.txt",
-  "fetched_at_utc": "2026-06-17T20:00:41Z",
+  "fetched_at_utc": "2026-06-22T11:27:21Z",
   "http_status": 200,
   "final_url": "https://macleans.ca/robots.txt",
   "redirected": false,
   "content_sha256": "32e23e0b782b93ea796581ab7496d8c55478f7a5c2e53f7a8e2bbf1fb91fc813",
   "content_bytes": 144,
-  "last_modified_header": "Wed, 17 Jun 2026 19:59:39 GMT",
+  "last_modified_header": "Mon, 22 Jun 2026 11:27:21 GMT",
   "etag_header": null,
   "content_type": "text/plain",
   "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "status": "ok",
   "error": null
 }

@@ -2,15 +2,16 @@
   "org_name": "Toronto Star",
   "domain": "thestar.com",
   "robots_url": "https://thestar.com/robots.txt",
-  "fetched_at_utc": "2026-06-17T20:00:38Z",
+  "fetched_at_utc": "2026-06-22T11:27:16Z",
   "http_status": 200,
   "final_url": "https://thestar.com/robots.txt",
   "redirected": false,
-  "content_sha256": "6c952516ff4278867dcfa8e2c9863ed518ebb5cbc5ea73fe09e059e472d32015",
+  "content_sha256": "3393c01d476b04bc903c4c7eab524b075d041c18132fc45c817c90af0daaba38",
   "content_bytes": 8189,
   "last_modified_header": null,
   "etag_header": null,
   "content_type": "text/plain; charset=UTF-8",
   "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "status": "ok",
   "error": null
 }

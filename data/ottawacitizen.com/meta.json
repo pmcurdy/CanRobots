@@ -2,15 +2,16 @@
   "org_name": "Ottawa Citizen (Postmedia)",
   "domain": "ottawacitizen.com",
   "robots_url": "https://ottawacitizen.com/robots.txt",
-  "fetched_at_utc": "2026-06-17T20:00:40Z",
+  "fetched_at_utc": "2026-06-22T11:27:18Z",
   "http_status": 200,
   "final_url": "https://ottawacitizen.com/robots.txt",
   "redirected": false,
   "content_sha256": "b74ac8c3ca594aeb6bf01cee0dc6b28b44e40994a87dd5a338526fb79b7e8dcc",
   "content_bytes": 881,
-  "last_modified_header": "Wed, 17 Jun 2026 20:00:40 GMT",
+  "last_modified_header": "Mon, 22 Jun 2026 11:27:18 GMT",
   "etag_header": null,
   "content_type": "text/plain",
   "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "status": "ok",
   "error": null
 }

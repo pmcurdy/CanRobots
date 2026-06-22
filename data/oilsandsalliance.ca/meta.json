@@ -2,15 +2,16 @@
   "org_name": "Oil Sands alliance (pathways alliance)",
   "domain": "oilsandsalliance.ca",
   "robots_url": "https://oilsandsalliance.ca/robots.txt",
-  "fetched_at_utc": "2026-06-17T20:00:45Z",
+  "fetched_at_utc": "2026-06-22T11:27:31Z",
   "http_status": 200,
   "final_url": "https://oilsandsalliance.ca/robots.txt",
   "redirected": false,
   "content_sha256": "723f54a2caea0f29cfe91718366e94b56bffe842cef2c9c487ec82e25c4c9c39",
   "content_bytes": 193,
-  "last_modified_header": "Wed, 17 Jun 2026 16:15:09 GMT",
+  "last_modified_header": "Mon, 22 Jun 2026 11:27:31 GMT",
   "etag_header": null,
   "content_type": "text/plain; charset=utf-8",
   "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "status": "ok",
   "error": null
 }

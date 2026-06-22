@@ -2,7 +2,7 @@
   "org_name": "Leger",
   "domain": "leger360.com",
   "robots_url": "https://leger360.com/robots.txt",
-  "fetched_at_utc": "2026-06-17T20:00:48Z",
+  "fetched_at_utc": "2026-06-22T11:27:35Z",
   "http_status": 200,
   "final_url": "https://leger360.com/robots.txt",
   "redirected": false,
@@ -12,5 +12,6 @@
   "etag_header": "\"68a5a007-185\"",
   "content_type": "text/plain",
   "runner_origin": "GitHub-hosted runner (Azure, US region)",
+  "status": "ok",
   "error": null
 }
