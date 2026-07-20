@@ -2,7 +2,7 @@
   "org_name": "TVO",
   "domain": "tvo.org",
   "robots_url": "https://tvo.org/robots.txt",
-  "fetched_at_utc": "2026-07-13T08:39:21Z",
+  "fetched_at_utc": "2026-07-20T08:32:02Z",
   "http_status": 200,
   "final_url": "https://www.tvo.org:443/robots.txt",
   "redirected": true,
@@ -10,8 +10,8 @@
   "content_bytes": 592,
   "last_modified_header": "Thu, 14 May 2026 15:53:08 GMT",
   "etag_header": "\"d220949bb144de2120e67c2c454c47fe\"",
-  "content_type": "text/plain",
+  "content_type": "text/html",
   "runner_origin": "GitHub-hosted runner (Azure, US region)",
-  "status": "ok",
-  "error": null
+  "status": "non-robots-response",
+  "error": "HTML Content-Type: text/html"
 }
