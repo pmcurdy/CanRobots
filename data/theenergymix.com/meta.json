@@ -2,7 +2,7 @@
   "org_name": "The Energy Mix",
   "domain": "theenergymix.com",
   "robots_url": "https://theenergymix.com/robots.txt",
-  "fetched_at_utc": "2026-08-17T06:24:18Z",
+  "fetched_at_utc": "2026-08-24T06:28:25Z",
   "http_status": null,
   "final_url": null,
   "redirected": null,
@@ -13,5 +13,5 @@
   "content_type": "text/html",
   "runner_origin": "GitHub-hosted runner (Azure, US region)",
   "status": "fetch_error",
-  "error": "ConnectTimeout: HTTPSConnectionPool(host='theenergymix.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='theenergymix.com', port=443) at 0x7f9713a5a850>, 'Connection to theenergymix.com timed out. (connect timeout=10)'))"
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='theenergymix.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='theenergymix.com', port=443) at 0x7fa00dc51610>, 'Connection to theenergymix.com timed out. (connect timeout=10)'))"
 }
