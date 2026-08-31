@@ -2,16 +2,16 @@
   "org_name": "David Suzuki Foundation",
   "domain": "davidsuzuki.org",
   "robots_url": "https://davidsuzuki.org/robots.txt",
-  "fetched_at_utc": "2026-08-24T06:28:24Z",
-  "http_status": 403,
+  "fetched_at_utc": "2026-08-31T11:53:29Z",
+  "http_status": 200,
   "final_url": "https://davidsuzuki.org/robots.txt",
   "redirected": false,
-  "content_sha256": null,
-  "content_bytes": null,
+  "content_sha256": "70ebcc80c6c26a52f90b604d889a4a663a09e1afda734520e131b296abcb9cfb",
+  "content_bytes": 2009,
   "last_modified_header": null,
   "etag_header": null,
-  "content_type": "text/html; charset=utf-8",
+  "content_type": "text/plain; charset=utf-8",
   "runner_origin": "GitHub-hosted runner (Azure, US region)",
-  "status": "blocked",
-  "error": "HTTP 403 (expected 200)"
+  "status": "ok",
+  "error": null
 }

@@ -2,16 +2,16 @@
   "org_name": "The Energy Mix",
   "domain": "theenergymix.com",
   "robots_url": "https://theenergymix.com/robots.txt",
-  "fetched_at_utc": "2026-08-24T06:28:25Z",
-  "http_status": null,
-  "final_url": null,
-  "redirected": null,
+  "fetched_at_utc": "2026-08-31T11:53:30Z",
+  "http_status": 403,
+  "final_url": "https://theenergymix.com/robots.txt",
+  "redirected": false,
   "content_sha256": "ded8ddda62e258780754c0bf2de9a3d8b91c2b6ec490085b9fa46ef018922bf4",
   "content_bytes": 202,
   "last_modified_header": "Wed, 25 May 2022 12:06:46 GMT",
   "etag_header": "W/\"628e1bd6-ca\"",
   "content_type": "text/html",
   "runner_origin": "GitHub-hosted runner (Azure, US region)",
-  "status": "fetch_error",
-  "error": "ConnectTimeout: HTTPSConnectionPool(host='theenergymix.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='theenergymix.com', port=443) at 0x7fa00dc51610>, 'Connection to theenergymix.com timed out. (connect timeout=10)'))"
+  "status": "blocked",
+  "error": "HTTP 403 (expected 200)"
 }
