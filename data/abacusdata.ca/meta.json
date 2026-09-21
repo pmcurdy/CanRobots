@@ -2,8 +2,8 @@
   "org_name": "Abacus",
   "domain": "abacusdata.ca",
   "robots_url": "https://abacusdata.ca/robots.txt",
-  "fetched_at_utc": "2026-09-14T11:02:05Z",
-  "http_status": 200,
+  "fetched_at_utc": "2026-09-21T11:11:06Z",
+  "http_status": 404,
   "final_url": "https://abacusdata.ca/robots.txt",
   "redirected": false,
   "content_sha256": "842b34303164ead41bccb7c05d1707422e98d108753b397b6dcc19683eb02101",
@@ -12,6 +12,6 @@
   "etag_header": null,
   "content_type": "text/plain; charset=utf-8",
   "runner_origin": "GitHub-hosted runner (Azure, US region)",
-  "status": "ok",
-  "error": null
+  "status": "blocked",
+  "error": "HTTP 404 (expected 200)"
 }
