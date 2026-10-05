@@ -132,6 +132,9 @@ Disallow: /
 User-agent: Grok
 Disallow: /
 
+User-agent: halobot
+Disallow: /
+
 User-agent: Heritrix
 Disallow: /
 

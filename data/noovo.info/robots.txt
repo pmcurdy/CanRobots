@@ -7,6 +7,7 @@ User-agent: *
 Allow: /
 Disallow: /video/_tel_1-888-933-9007
 Disallow: /content/dam/
+Disallow: /error/
 Disallow: /content/_cq_tags/
 Disallow: /nouvelle/_tel_1 800 659-4264
 Disallow: /video/_tel_18003639010

@@ -30,6 +30,9 @@ Disallow: /
 User-agent: omgili
 Disallow: /
 
+User-agent: ottown
+Disallow: /
+
 X-RSL: https://common-assets.gprod.postmedia.digital/assets/postmedia-network-license.xml
 
 Sitemap: https://ottawacitizen.com/sitemap.xml
