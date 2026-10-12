@@ -661,6 +661,45 @@ Disallow: /
 User-agent: Spider
 Disallow: /
 
+User-agent: AgentDataBot
+Disallow: /
+
+User-agent: BeansLLM-CorpusBot
+Disallow: /
+
+User-agent: BixelBot
+Disallow: /
+
+User-agent: DesearchBot
+Disallow: /
+
+User-agent: Hunyuan
+Disallow: /
+
+User-agent: ImageBot
+Disallow: /
+
+User-agent: Keenable-User
+Disallow: /
+
+User-agent: KeenableBot
+Disallow: /
+
+User-agent: recraft-image-dataset
+Disallow: /
+
+User-agent: ScryBot
+Disallow: /
+
+User-agent: SofyaBot
+Disallow: /
+
+User-agent: TalarionFrontierCrawler
+Disallow: /
+
+User-agent: YiBot
+Disallow: /
+
 User-agent: *
 Disallow: /tncms/tracking/
 Disallow: /_services/
@@ -696,30 +735,30 @@ Disallow: /t/
 Disallow: /tapp/
 Disallow: /test/
 Disallow: /test_aplus/
-Disallow: /tncms/gtm/
-Disallow: /tncms/messaging/
-Disallow: /tncms/track/
-Disallow: /tncms/admin/
-Disallow: /tncms/counter/
-Disallow: /tncms/search/
-Disallow: /tncms/tax/
-Disallow: /tncms/auth/
-Disallow: /tncms/webservice/
-Disallow: /tncms/dmp/
-Disallow: /tncms/block/
 Disallow: /tncms/media/
 Disallow: /tncms/csrf/
-Disallow: /tncms/weather/
-Disallow: /tncms/openid2/
+Disallow: /tncms/webservice/
+Disallow: /tncms/gtm/
+Disallow: /tncms/dmp/
+Disallow: /tncms/block/
+Disallow: /tncms/admin/
+Disallow: /tncms/auth/
+Disallow: /tncms/track/
 Disallow: /tncms/openweb/*
+Disallow: /tncms/openid2/
+Disallow: /tncms/counter/
+Disallow: /tncms/tax/
+Disallow: /tncms/search/
+Disallow: /tncms/weather/
+Disallow: /tncms/messaging/
+Disallow: /content/tncms/assets/v3/form/
+Disallow: /content/tncms/form/
+Disallow: /content/tncms/
 Disallow: /tncms/calendar/
 Disallow: /tncms/user/
 Disallow: /users/admin/
 Disallow: /users/*/?
 Disallow: /marketplace/*action=srch
-Disallow: /content/tncms/assets/v3/form/
-Disallow: /content/tncms/form/
-Disallow: /content/tncms/
 Disallow: /tncms/disqus/
 Disallow: /tncms/asset/editorial/http*
 Disallow: /*%7b%7burl%7d%7d

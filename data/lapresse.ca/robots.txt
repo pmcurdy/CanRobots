@@ -9,7 +9,6 @@
 # Contact Copibec for assistance
 
 User-agent: *
-
 Disallow: /_previsualisation/
 Disallow: /includes/boite/1/
 Disallow: /includes/boite/2/
@@ -76,6 +75,7 @@ User-agent: webzio
 User-agent: webzio-extended
 User-agent: YouBot
 Allow: /xtra/
+Allow: /robots.txt
 Disallow: /
 
 Sitemap: https://www.lapresse.ca/sitemapindex.xml

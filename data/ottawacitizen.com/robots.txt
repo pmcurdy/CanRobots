@@ -18,6 +18,18 @@ Disallow: /category/sponsored/
 Disallow: /sponsored/
 Disallow: /category/uncategorized/
 
+User-agent: Amzn-SearchBot
+Disallow: /
+
+User-agent: DuckAssistBot
+Disallow: /
+
+User-agent: Google-Agent
+Disallow: /
+
+User-agent: MistralAI-User
+Disallow: /
+
 User-agent: muse
 Disallow: /
 
@@ -31,6 +43,15 @@ User-agent: omgili
 Disallow: /
 
 User-agent: ottown
+Disallow: /
+
+User-agent: ShapBot
+Disallow: /
+
+User-agent: Shap-User
+Disallow: /
+
+User-agent: YouBot
 Disallow: /
 
 X-RSL: https://common-assets.gprod.postmedia.digital/assets/postmedia-network-license.xml
