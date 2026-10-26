@@ -1,3 +1,4 @@
-user-agent: * 
-disallow: 
-crawl-delay: 60
+User-agent: *
+Disallow:
+
+Sitemap: https://ricochet.media/sitemap_index.xml

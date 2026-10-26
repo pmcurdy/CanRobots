@@ -2,283 +2,115 @@
 # Toute autre utilisation n'est pas autorisée, y compris, mais sans s'y limiter : pour les grands modèles de langage (LLM), l'apprentissage automatique et/ou les activités liées à l'intelligence artificielle.
 # Contact droits@ledevoir.com
 
-# le Devoir content is made available under our terms and conditions of use.
-# Any other uses are not permitted, incl. but not limited to: for large language models (LLMs), machine learning and/or artificial intelligence-related
+# Le Devoir content is made available under our terms and conditions of use.
+# Any other uses are not permitted, including but not limited to: for large language models (LLMs), machine learning and/or artificial intelligence-related activities.
 # Contact droits@ledevoir.com for assistance
 
 Sitemap: https://www.ledevoir.com/sitemap.xml
 
 User-agent: *
-Disallow: /recherche*
+Disallow: /recherche
 Disallow: /article-favori-modifier/
 Disallow: /auth/externe
 Disallow: /origin
-Disallow: /origin/interactif
-Disallow: /origin/dept-publicite.json
 Disallow: /piano/auth
 Crawl-delay: 5
 
 User-agent: AcademicBotRTU
-Disallow: /
-
 User-agent: AhrefsBot
-Disallow: /
-
 User-agent: AionBot
-Disallow: /
-
 User-agent: Amazonbot
-Disallow: /
-
 User-agent: amazon-kendra
-Disallow: /
-
 User-agent: Amzn-SearchBot
-Disallow: /
-
 User-agent: Amzn-User
-Disallow: /
-
 User-agent: anthropic-ai
-Disallow: /
-
 User-agent: Applebot
-Disallow: /
-
 User-agent: Applebot-Extended
-Disallow: /
-
 User-agent: archive.org_bot
-Disallow: /
-
 User-agent: Archive-It
-Disallow: /
-
 User-agent: BaiduSpider
-Disallow: /
-
 User-agent: BLEXBot
-Disallow: /
-
 User-agent: Brandwatch
-Disallow: /
-
-User-agent: Brightbot 1.0
-Disallow: /
-
+User-agent: Brightbot
 User-agent: Bytespider
-Disallow: /
-
-User-agent: carbon-umbrella-bot/1.0
-Disallow: /
-
+User-agent: carbon-umbrella-bot
 User-agent: CCBot
-Disallow: /
-
 User-agent: ChatGPT-User
-Disallow: /
-
 User-agent: Cision
-Disallow: /
-
 User-agent: Claude
-Disallow: /
-
 User-agent: Claudebot
-Disallow: /
-
 User-agent: Claude-Web
-Disallow: /
-
+User-agent: Claude-User
+User-agent: Claude-SearchBot
 User-agent: DataForSeoBot
-Disallow: /
-
 User-agent: Deepseek
-Disallow: /
-
 User-agent: Diffbot
-Disallow: /
-
 User-agent: dotbot
-Disallow: /
-
 User-agent: Dragonfly
-Disallow: /
-
 User-agent: ErisBot
-Disallow: /
-
 User-agent: FacebookBot
-Disallow: /
-
-User-agent: fiperbot/0.1 (+https://www.fiper.net)
-Disallow: /
-
+User-agent: fiperbot
 User-agent: Gigabot
-Disallow: /
-
 User-agent: Gnowit
-Disallow: /
-
 User-agent: GnowitNewsbot
-Disallow: /
-
 User-agent: Google-Extended
-Disallow: /
-
 User-agent: GPTBot
-Disallow: /
-
 User-agent: Grok
-Disallow: /
-
 User-agent: halobot
-Disallow: /
-
+User-agent: HBLinkResearch
 User-agent: Heritrix
-Disallow: /
-
 User-agent: ia_archiver
-Disallow: /
-
 User-agent: IbouBot
-Disallow: /
-
 User-agent: ImageBot
-Disallow: /
-
+User-agent: Info2424
 User-agent: Info2424.info
-Disallow: /
-
 User-agent: linkfluence
-Disallow: /
-
-User-agent: LinkupBot/1.0
-Disallow: /
-
+User-agent: LinkupBot
 User-agent: magpie-crawler
-Disallow: /
-
+User-agent: mediatoolkit
 User-agent: mediatoolkit.com
-Disallow: /
-
 User-agent: Meltwater
-Disallow: /
-
 User-agent: Meta-ExternalAgent
-Disallow: /
-
 User-agent: Meta-ExternalFetcher
-Disallow: /
-
 User-agent: Muckrack
-Disallow: /
-
-User-agent: newspaper/0.9.5
-Disallow: /
-
+User-agent: newspaper
+User-agent: news-api
 User-agent: news-api.org
-Disallow: /
-
-User-agent: Observer/1.0 (+https://obsrvr.net/about; crawler@obsrvr.net)
-Disallow: /
-
+User-agent: Observer
 User-agent: OAI-SearchBot
-Disallow: /
-
 User-agent: openai
-Disallow: /
-
 User-agent: OTMedia
-Disallow: /
-
 User-agent: Opoint
-Disallow: /
-
 User-agent: Perplexity
-Disallow: /
-
+User-agent: PerplexityBot
+User-agent: Perplexity-User
 User-agent: PetalBot
-Disallow: /
-
 User-agent: Pinterestbot
-Disallow: /
-
-User-agent: PressEngineBot (+http://pressengine.net/crawl-policy)
-Disallow: /
-
+User-agent: PressEngineBot
+User-agent: QlyzeBot
 User-agent: Qwantbot
-Disallow: /
-
+User-agent: quillbot
 User-agent: quillbot.com
-Disallow: /
-
 User-agent: QuiverRasterResearch
-Disallow: /
-
 User-agent: scoopit
-Disallow: /
-
 User-agent: scpitspi-rs
-Disallow: /
-
 User-agent: Scrapy
-Disallow: /
-
+User-agent: semantic-visions
 User-agent: semantic-visions.com
-Disallow: /
-
-
 User-agent: SemrushBot
-Disallow: /
-
 User-agent: SentiBot
-Disallow: /
-
 User-agent: SERankingBacklinksBot
-Disallow: /
-
 User-agent: serpstatbot
-Disallow: /
-
 User-agent: ShapBot
-Disallow: /
-
 User-agent: Sindup
-Disallow: /
-
 User-agent: SleepBot
-Disallow: /
-
 User-agent: SofyaBot
-Disallow: /
-
 User-agent: Squidbot
-Disallow: /
-
-User-agent: Squidbot/1.0
-Disallow: /
-
+User-agent: SR-image-research
 User-agent: trendiction
-Disallow: /
-
-User-agent: Timpibot/0.9
-Disallow: /
-
 User-agent: Timpibot
-Disallow: /
-
-User-agent: Tor
-Disallow: /
-
 User-agent: Turnitin
-Disallow: /
-
 User-agent: webzio
-Disallow: /
-
 User-agent: YouBot
-Disallow: /
-
 User-agent: YandexCalendar
 Disallow: /

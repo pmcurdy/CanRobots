@@ -1,0 +1,116 @@
+# Le contenu du Devoir est mis à disposition selon nos conditions d'utilisation.
+# Toute autre utilisation n'est pas autorisée, y compris, mais sans s'y limiter : pour les grands modèles de langage (LLM), l'apprentissage automatique et/ou les activités liées à l'intelligence artificielle.
+# Contact droits@ledevoir.com
+
+# Le Devoir content is made available under our terms and conditions of use.
+# Any other uses are not permitted, including but not limited to: for large language models (LLMs), machine learning and/or artificial intelligence-related activities.
+# Contact droits@ledevoir.com for assistance
+
+Sitemap: https://www.ledevoir.com/sitemap.xml
+
+User-agent: *
+Disallow: /recherche
+Disallow: /article-favori-modifier/
+Disallow: /auth/externe
+Disallow: /origin
+Disallow: /piano/auth
+Crawl-delay: 5
+
+User-agent: AcademicBotRTU
+User-agent: AhrefsBot
+User-agent: AionBot
+User-agent: Amazonbot
+User-agent: amazon-kendra
+User-agent: Amzn-SearchBot
+User-agent: Amzn-User
+User-agent: anthropic-ai
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: archive.org_bot
+User-agent: Archive-It
+User-agent: BaiduSpider
+User-agent: BLEXBot
+User-agent: Brandwatch
+User-agent: Brightbot
+User-agent: Bytespider
+User-agent: carbon-umbrella-bot
+User-agent: CCBot
+User-agent: ChatGPT-User
+User-agent: Cision
+User-agent: Claude
+User-agent: Claudebot
+User-agent: Claude-Web
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: DataForSeoBot
+User-agent: Deepseek
+User-agent: Diffbot
+User-agent: dotbot
+User-agent: Dragonfly
+User-agent: ErisBot
+User-agent: FacebookBot
+User-agent: fiperbot
+User-agent: Gigabot
+User-agent: Gnowit
+User-agent: GnowitNewsbot
+User-agent: Google-Extended
+User-agent: GPTBot
+User-agent: Grok
+User-agent: halobot
+User-agent: HBLinkResearch
+User-agent: Heritrix
+User-agent: ia_archiver
+User-agent: IbouBot
+User-agent: ImageBot
+User-agent: Info2424
+User-agent: Info2424.info
+User-agent: linkfluence
+User-agent: LinkupBot
+User-agent: magpie-crawler
+User-agent: mediatoolkit
+User-agent: mediatoolkit.com
+User-agent: Meltwater
+User-agent: Meta-ExternalAgent
+User-agent: Meta-ExternalFetcher
+User-agent: Muckrack
+User-agent: newspaper
+User-agent: news-api
+User-agent: news-api.org
+User-agent: Observer
+User-agent: OAI-SearchBot
+User-agent: openai
+User-agent: OTMedia
+User-agent: Opoint
+User-agent: Perplexity
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: PetalBot
+User-agent: Pinterestbot
+User-agent: PressEngineBot
+User-agent: QlyzeBot
+User-agent: Qwantbot
+User-agent: quillbot
+User-agent: quillbot.com
+User-agent: QuiverRasterResearch
+User-agent: scoopit
+User-agent: scpitspi-rs
+User-agent: Scrapy
+User-agent: semantic-visions
+User-agent: semantic-visions.com
+User-agent: SemrushBot
+User-agent: SentiBot
+User-agent: SERankingBacklinksBot
+User-agent: serpstatbot
+User-agent: ShapBot
+User-agent: Sindup
+User-agent: SleepBot
+User-agent: SofyaBot
+User-agent: Squidbot
+User-agent: SR-image-research
+User-agent: trendiction
+User-agent: Timpibot
+User-agent: Turnitin
+User-agent: webzio
+User-agent: YouBot
+User-agent: YandexCalendar
+Disallow: /
