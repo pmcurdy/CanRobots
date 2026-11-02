@@ -26,10 +26,12 @@
 
 # BEGIN Cloudflare Managed content
 
+
 User-agent: *
 Content-Signal: search=yes,ai-train=no,use=reference
 Allow: /
 
+# Training crawlers
 User-agent: Amazonbot
 Disallow: /
 
@@ -45,7 +47,7 @@ Disallow: /
 User-agent: ClaudeBot
 Disallow: /
 
-User-agent: CloudflareBrowserRenderingCrawler
+User-agent: Diffbot
 Disallow: /
 
 User-agent: Google-Extended
@@ -54,7 +56,74 @@ Disallow: /
 User-agent: GPTBot
 Disallow: /
 
+User-agent: omgili
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: MistralAI-Training
+Disallow: /
+
 User-agent: meta-externalagent
+Disallow: /
+
+User-agent: GoogleOther
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: AwarioSmartBot
+User-agent: AwarioRssBot
+Disallow: /
+
+User-agent: Google-CloudVertexBot
+Disallow: /
+
+User-agent: QualifiedBot
+Disallow: /
+
+User-agent: Cotoyogi
+Disallow: /
+
+User-agent: ICC-Crawler
+Disallow: /
+
+User-agent: atlassian-bot
+Disallow: /
+
+User-agent: FishBot
+Disallow: /
+
+User-agent: BorderxBot
+Disallow: /
+
+User-agent: NavuBot
+Disallow: /
+
+User-agent: SemrushBot-SWA
+Disallow: /
+
+User-agent: WARDBot
+Disallow: /
+
+User-agent: magpie-crawler
+Disallow: /
+
+User-agent: KimiBot
+Disallow: /
+
+User-agent: CitibotSiteCrawler
 Disallow: /
 
 # END Cloudflare Managed Content

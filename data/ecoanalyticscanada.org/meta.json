@@ -2,16 +2,16 @@
   "org_name": "Ecoanalytics",
   "domain": "ecoanalyticscanada.org",
   "robots_url": "https://ecoanalyticscanada.org/robots.txt",
-  "fetched_at_utc": "2026-10-26T11:36:44Z",
-  "http_status": 200,
+  "fetched_at_utc": "2026-11-02T13:55:33Z",
+  "http_status": 404,
   "final_url": "https://ecoanalyticscanada.org/robots.txt",
   "redirected": false,
   "content_sha256": "788f3c83708d6ae14d912883bc3f68896a7859b118530020f15ada244dd16af9",
   "content_bytes": 123,
   "last_modified_header": null,
   "etag_header": null,
-  "content_type": "text/plain; charset=utf-8",
+  "content_type": "text/html",
   "runner_origin": "GitHub-hosted runner (Azure, US region)",
-  "status": "ok",
-  "error": null
+  "status": "blocked",
+  "error": "HTTP 404 (expected 200)"
 }

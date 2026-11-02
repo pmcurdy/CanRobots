@@ -1,79 +1,102 @@
+# ====================
+# Specific Bot Rules
+# ====================
 User-agent: AmazonAdBot
-Disallow: /wp-admin/
-Disallow: /cms-admin/
-
-User-agent: *
-Disallow: /wp-admin/
-Disallow: /*?
-Disallow: /cms-admin/
-Allow: /wp-admin/admin-ajax.php
-Allow: /sitemap-story.xml?
-Allow: /sitemap-wired-video.xml?
-Allow: /sitemap-exclusive-video.xml?
-Allow: /*?r
-Allow: /*?amu
-
+Disallow: /
 User-agent: Googlebot-News
 Disallow: /category/sponsored/
 Disallow: /sponsored/
-Disallow: /category/uncategorized/
-
-User-agent: Amzn-SearchBot
-Disallow: /
-
-User-agent: DuckAssistBot
-Disallow: /
-
-User-agent: facebookexternalhit
-Disallow: /
-
-User-agent: Google-Agent
-Disallow: /
-
-User-agent: meta-externalads
-Disallow: /
-
-User-agent: meta-externalagent
-Disallow: /
-
-User-agent: meta-externalfetcher
-Disallow: /
-
-User-agent: meta-webindexer
-Disallow: /
-
-User-agent: MistralAI-User
-Disallow: /
-
-User-agent: muse
-Disallow: /
-
-User-agent: musebot
-Disallow: /
-
 User-agent: omgilibot
 Disallow: /
-
 User-agent: omgili
 Disallow: /
-
-User-agent: ottown
+User-agent: TurnitinBot
+Disallow: /search/
+Disallow: /search
+Crawl-delay: 10
+User-agent: FacebookBot
 Disallow: /
-
-User-agent: ShapBot
+User-agent: Amazonbot
 Disallow: /
-
-User-agent: Shap-User
+User-agent: PetalBot
 Disallow: /
-
-User-agent: YouBot
+User-agent: Baiduspider
 Disallow: /
+# ====================
+# AI / LLM Crawlers
+# ====================
+User-agent: GPTBot
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: Claude-Web
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: Gemini-Deep-Research
+Disallow: /
+User-agent: PerplexityBot
+Disallow: /
+User-agent: Perplexity-User
+Disallow: /
+User-agent: ProRataBot
+Disallow: /
+User-agent: Meta-ExternalAgent
+Disallow: /
+User-agent: Meta-WebIndexer
+Disallow: /
+User-agent: NovaAct
+Disallow: /
+User-agent: bedrockbot
+Disallow: /
+User-agent: ds9Bot
+Disallow: /
+User-agent: scornerCisionBot
+Disallow: /
+User-agent: Cision-Bot
+Disallow: /
+User-agent: Cedrom
+Disallow: /
+User-agent: Bytespider
+Disallow: /
+User-agent: Applebot-Extended
+Disallow: /
+User-agent: FullintelBot
+Disallow: /
+User-agent: Fullintel
+Disallow: /
+# ====================
+# Global Rules
+# ====================
+User-agent: *
+Disallow: /?s=
+Disallow: /search
+Disallow: /search/
+Disallow: /*?preview_id=*
+Disallow: /wp-admin/
+Disallow: /cms-admin/
+Disallow: /?p=
+Disallow: /feed$
+Disallow: /feed/$
+Disallow: /*/feed$
+Disallow: /*/feed/$
+Allow: /wp-admin/admin-ajax.php
 
+# ====================
+# License
+# ====================
 X-RSL: https://common-assets.gprod.postmedia.digital/assets/postmedia-network-license.xml
 
+# ====================
+# Sitemaps
+# ====================
 Sitemap: https://nationalpost.com/sitemap.xml
-Sitemap: https://nationalpost.com/sitemap-news.xml
-Sitemap: https://nationalpost.com/sitemap-category.xml
-Sitemap: https://nationalpost.com/sitemap-video.xml
-Sitemap: https://nationalpost.com/sitemap-old.xml
-Sitemap: https://nationalpost.com/sitemap-static.xml
+Sitemap: https://nationalpost.com/categories-sitemap.xml
+Sitemap: https://nationalpost.com/authors-sitemap.xml
+Sitemap: https://nationalpost.com/news-sitemap.xml
+Sitemap: https://nationalpost.com/sitemaps/article-archive.xml
+Sitemap: https://nationalpost.com/sitemaps/article-new.xml
