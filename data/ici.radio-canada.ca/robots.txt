@@ -2,12 +2,9 @@ User-agent: *           # directed to all spiders
 
 # Pages qui n'existe plus (erreur 404)
 Disallow: /regions/nord-ontario/
-Disallow: /regions/windsor/
 Disallow: /url.asp
 Disallow: /nouvelles/alerte/
-Disallow: /regions/toronto/
 Disallow: /radio/maisonneuve/tribune_pop_z.asp
-Disallow: /culture/
 Disallow: /regions/quebec/classesportive/stats/
 Disallow: /par4/
 Disallow: /tv/
