@@ -742,6 +742,63 @@ Disallow: /
 User-agent: YepBot
 Disallow: /
 
+User-agent: amazon-bedrock-knowledgebase
+Disallow: /
+
+User-agent: AndiBot
+Disallow: /
+
+User-agent: Diffbot-User
+Disallow: /
+
+User-agent: DigitalOceanGradientAICrawler
+Disallow: /
+
+User-agent: Element451Bot
+Disallow: /
+
+User-agent: Google-GeminiNotebook
+Disallow: /
+
+User-agent: GoogleOther-Image
+Disallow: /
+
+User-agent: amazon-Quick
+Disallow: /
+
+User-agent: Context7-Crawler
+Disallow: /
+
+User-agent: GoogleOther-Video
+Disallow: /
+
+User-agent: Haiku-SearchBot
+Disallow: /
+
+User-agent: HaikuBot
+Disallow: /
+
+User-agent: KarlaCrawler
+Disallow: /
+
+User-agent: KernelSearchBot
+Disallow: /
+
+User-agent: Liner-User
+Disallow: /
+
+User-agent: MistralAI-Training
+Disallow: /
+
+User-agent: NavuBot
+Disallow: /
+
+User-agent: OnirocoCrawler
+Disallow: /
+
+User-agent: ProRataInc
+Disallow: /
+
 User-agent: *
 Disallow: /tncms/tracking/
 Disallow: /_services/
@@ -777,31 +834,31 @@ Disallow: /t/
 Disallow: /tapp/
 Disallow: /test/
 Disallow: /test_aplus/
-Disallow: /tncms/openweb/*
-Disallow: /tncms/weather/
-Disallow: /tncms/openid2/
-Disallow: /tncms/search/
-Disallow: /tncms/auth/
-Disallow: /tncms/track/
 Disallow: /tncms/gtm/
 Disallow: /tncms/dmp/
-Disallow: /tncms/tax/
-Disallow: /tncms/admin/
-Disallow: /tncms/csrf/
 Disallow: /tncms/messaging/
+Disallow: /tncms/tax/
+Disallow: /tncms/openid2/
+Disallow: /tncms/weather/
+Disallow: /tncms/csrf/
+Disallow: /tncms/track/
 Disallow: /tncms/media/
-Disallow: /tncms/block/
-Disallow: /tncms/counter/
 Disallow: /tncms/webservice/
-Disallow: /content/tncms/
-Disallow: /tncms/calendar/
+Disallow: /tncms/search/
+Disallow: /tncms/counter/
+Disallow: /tncms/openweb/*
+Disallow: /tncms/auth/
+Disallow: /tncms/block/
+Disallow: /tncms/admin/
 Disallow: /tncms/user/
 Disallow: /users/admin/
 Disallow: /users/*/?
-Disallow: /marketplace/*action=srch
-Disallow: /tncms/disqus/
 Disallow: /content/tncms/assets/v3/form/
 Disallow: /content/tncms/form/
+Disallow: /content/tncms/
+Disallow: /tncms/disqus/
+Disallow: /marketplace/*action=srch
+Disallow: /tncms/calendar/
 Disallow: /tncms/asset/editorial/http*
 Disallow: /*%7b%7burl%7d%7d
 Disallow: /*%7B%7Burl%7D%7D

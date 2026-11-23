@@ -47,6 +47,9 @@ User-agent: Deepseek
 User-agent: Diffbot
 User-agent: dotbot
 User-agent: Dragonfly
+User-agent: ElevenlabsCrawler
+User-agent: ExaSearchBot
+User-agent: ExaSearchBot-Images
 User-agent: ErisBot
 User-agent: FacebookBot
 User-agent: fiperbot
@@ -64,6 +67,8 @@ User-agent: IbouBot
 User-agent: ImageBot
 User-agent: Info2424
 User-agent: Info2424.info
+User-agent: KeenableBot
+User-agent: LHRSearchBot
 User-agent: linkfluence
 User-agent: LinkupBot
 User-agent: magpie-crawler
@@ -72,6 +77,7 @@ User-agent: mediatoolkit.com
 User-agent: Meltwater
 User-agent: Meta-ExternalAgent
 User-agent: Meta-ExternalFetcher
+User-agent: MistralAI-User
 User-agent: Muckrack
 User-agent: newspaper
 User-agent: news-api

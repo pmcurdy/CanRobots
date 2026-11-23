@@ -74,6 +74,9 @@ Disallow: /
 User-agent: Anomura
 Disallow: /
 
+User-agent: Applebot-Extended
+Disallow: /
+
 User-agent: archive.org_bot
 Disallow: /
 

@@ -23,6 +23,7 @@ Disallow: /recherche
 Disallow: /*/embed$
 Disallow: /*/embed/$
 
+User-Agent: __usage_ai-training
 User-agent: AhrefsBot
 User-agent: Amazonbot
 User-agent: anthropic-ai

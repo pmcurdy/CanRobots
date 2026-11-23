@@ -214,6 +214,9 @@ Disallow: /
 User-agent: heritrix
 Disallow: /
 
+User-agent: Meta-ExternalAds
+Disallow: /
+
 User-agent: *
 Disallow: /tncms/tracking/
 Disallow: /_services/
@@ -225,29 +228,29 @@ Disallow: /style_guide/
 Disallow: /test/
 Disallow: /test/video_test/
 Disallow: /weather/
-Disallow: /tncms/counter/
-Disallow: /tncms/block/
-Disallow: /tncms/messaging/
-Disallow: /tncms/admin/
-Disallow: /tncms/openweb/*
-Disallow: /tncms/track/
-Disallow: /tncms/webservice/
-Disallow: /tncms/dmp/
-Disallow: /tncms/tax/
-Disallow: /tncms/csrf/
-Disallow: /tncms/gtm/
-Disallow: /tncms/search/
 Disallow: /tncms/auth/
+Disallow: /tncms/admin/
 Disallow: /tncms/media/
+Disallow: /tncms/gtm/
+Disallow: /tncms/block/
+Disallow: /tncms/dmp/
+Disallow: /tncms/counter/
+Disallow: /tncms/openweb/*
 Disallow: /tncms/weather/
+Disallow: /tncms/messaging/
+Disallow: /tncms/csrf/
+Disallow: /tncms/tax/
 Disallow: /tncms/openid2/
-Disallow: /content/tncms/
+Disallow: /tncms/search/
+Disallow: /tncms/webservice/
+Disallow: /tncms/track/
 Disallow: /marketplace/*action=srch
+Disallow: /tncms/calendar/
 Disallow: /tncms/disqus/
+Disallow: /content/tncms/
 Disallow: /tncms/user/
 Disallow: /users/admin/
 Disallow: /users/*/?
-Disallow: /tncms/calendar/
 Disallow: /content/tncms/assets/v3/form/
 Disallow: /content/tncms/form/
 
